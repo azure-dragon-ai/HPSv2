@@ -26,4 +26,5 @@ pip install hpsv2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
 python -m pip install .
 
 python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
+pip install turtle -i https://pypi.douban.com/simple
 ```

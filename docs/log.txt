@@ -1,0 +1,9 @@
+python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
+Traceback (most recent call last):
+  File "/data/home/zhangchunsheng/git/HPSv2/hpsv2/img_score.py", line 3, in <module>
+    from hpsv2.src.open_clip import create_model_and_transforms, get_tokenizer
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/hpsv2/src/open_clip/__init__.py", line 3, in <module>
+    from .factory import create_model, create_model_and_transforms, create_model_from_pretrained, get_tokenizer, create_loss
+  File "/data/home/zhangchunsheng/clip/lib/python3.9/site-packages/hpsv2/src/open_clip/factory.py", line 8, in <module>
+    from turtle import forward
+ModuleNotFoundError: No module named 'turtle'
