@@ -22,4 +22,6 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host=mirrors.aliyun.com
 
 pip install hpsv2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+python -m pip install .
 ```
