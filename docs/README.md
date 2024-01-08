@@ -8,6 +8,8 @@ wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2.1_compressed.pt?downl
 wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2.pt?download=true"
 wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt?download=true"
 
+https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/open_clip_pytorch_model.bin
+
 wget https://testing.ai-space.net/HPSv2pt/HPS_v2.1_compressed.pt
 wget https://testing.ai-space.net/HPSv2pt/HPS_v2.pt
 wget https://testing.ai-space.net/HPSv2pt/HPS_v2_compressed.pt
@@ -36,5 +38,8 @@ set HPS_ROOT=c:\Work\AI-Service\Score\HPSv2\HPSv2Models
 
 python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
 set HPS_ROOT=c:\Work\AI-Service\Score\HPSv2\HPSv2Models & python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
+
+export HF_ENDPOINT=https://hf-mirror.com
+set HF_ENDPOINT=https://hf-mirror.com & set HPS_ROOT=c:\Work\AI-Service\Score\HPSv2\HPSv2Models & python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
 pip install turtle -i https://pypi.douban.com/simple
 ```
