@@ -249,7 +249,7 @@ def evaluate(mode: str, root_dir: str, data_path: str = os.path.join(root_path,'
         os.makedirs(root_path)
     if checkpoint_path == os.path.join(root_path,'HPS_v2_compressed.pt') and not os.path.exists(checkpoint_path):
         print('Downloading HPS_v2_compressed.pt ...')
-        url = 'https://huggingface.co/spaces/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt'
+        url = 'https://hf-mirror.com/spaces/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt'
         r = requests.get(url, stream=True)
         with open(os.path.join(root_path, 'HPS_v2_compressed.pt'), 'wb') as HPSv2:
             total_length = int(r.headers.get('content-length'))

@@ -51,7 +51,7 @@ def score(img_path: Union[list, str, Image.Image], prompt: str, cp: str = os.pat
         os.makedirs(root_path)
     if cp == os.path.join(root_path, 'HPS_v2_compressed.pt') and not os.path.exists(cp):
         print('Downloading HPS_v2_compressed.pt ...')
-        url = 'https://huggingface.co/spaces/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt'
+        url = 'https://hf-mirror.com/spaces/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt'
         r = requests.get(url, stream=True)
         with open(os.path.join(root_path,'HPS_v2_compressed.pt'), 'wb') as HPSv2:
             total_length = int(r.headers.get('content-length'))

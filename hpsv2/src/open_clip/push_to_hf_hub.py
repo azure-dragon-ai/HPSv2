@@ -75,7 +75,7 @@ def push_to_hf_hub(
     model_card: Optional[dict] = None,
 ):
     if not isinstance(tokenizer, HFTokenizer):
-        # default CLIP tokenizers use https://huggingface.co/openai/clip-vit-large-patch14
+        # default CLIP tokenizers use https://hf-mirror.com/openai/clip-vit-large-patch14
         tokenizer = HFTokenizer('openai/clip-vit-large-patch14')
 
     # Create repo if it doesn't exist yet

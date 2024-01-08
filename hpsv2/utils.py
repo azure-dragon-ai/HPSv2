@@ -148,7 +148,7 @@ def download_benchmark_prompts() -> None:
     if not os.path.exists(os.path.join(root_path, 'datasets/benchmark/')):
         os.makedirs(os.path.join(root_path, 'datasets/benchmark/'))
     if not os.path.exists(os.path.join(root_path, 'datasets/benchmark/anime.json')):
-        anime_url = 'https://huggingface.co/datasets/zhwang/HPDv2/resolve/main/benchmark/anime.json'
+        anime_url = 'https://hf-mirror.com/datasets/zhwang/HPDv2/resolve/main/benchmark/anime.json'
         r = requests.get(anime_url, stream=True)
         with open(os.path.join(root_path, 'datasets/benchmark/anime.json'), 'wb') as anime_json:
             total_length = int(r.headers.get('content-length'))
@@ -159,7 +159,7 @@ def download_benchmark_prompts() -> None:
         print('Download benchmark prompts anime.json to {} successfully!'.format(os.path.join(root_path, 'datasets/benchmark/')))
         
     if not os.path.exists(os.path.join(root_path, 'datasets/benchmark/concept-art.json')):
-        concept_art_url = 'https://huggingface.co/datasets/zhwang/HPDv2/resolve/main/benchmark/concept-art.json'
+        concept_art_url = 'https://hf-mirror.com/datasets/zhwang/HPDv2/resolve/main/benchmark/concept-art.json'
         r = requests.get(concept_art_url, stream=True)
         with open(os.path.join(root_path, 'datasets/benchmark/concept-art.json'), 'wb') as concept_art_json:
             total_length = int(r.headers.get('content-length'))
@@ -170,7 +170,7 @@ def download_benchmark_prompts() -> None:
         print('Download benchmark prompts concept-art.json to {} successfully!'.format(os.path.join(root_path, 'datasets/benchmark/')))
     
     if not os.path.exists(os.path.join(root_path, 'datasets/benchmark/paintings.json')):
-        paintings_url = 'https://huggingface.co/datasets/zhwang/HPDv2/resolve/main/benchmark/paintings.json'
+        paintings_url = 'https://hf-mirror.com/datasets/zhwang/HPDv2/resolve/main/benchmark/paintings.json'
         r = requests.get(paintings_url, stream=True)
         with open(os.path.join(root_path, 'datasets/benchmark/paintings.json'), 'wb') as paintings_json:
             total_length = int(r.headers.get('content-length'))
@@ -181,7 +181,7 @@ def download_benchmark_prompts() -> None:
         print('Download benchmark prompts paintings.json to {} successfully!'.format(os.path.join(root_path, 'datasets/benchmark/')))
     
     if not os.path.exists(os.path.join(root_path, 'datasets/benchmark/photo.json')):
-        photo_url = 'https://huggingface.co/datasets/zhwang/HPDv2/resolve/main/benchmark/photo.json'
+        photo_url = 'https://hf-mirror.com/datasets/zhwang/HPDv2/resolve/main/benchmark/photo.json'
         r = requests.get(photo_url, stream=True)
         with open(os.path.join(root_path, 'datasets/benchmark/photo.json'), 'wb') as photo_json:
             total_length = int(r.headers.get('content-length'))
@@ -205,7 +205,7 @@ def download_benchmark_images(model_id: str) -> None:
         os.makedirs(os.path.join(root_path, 'datasets/benchmark/benchmark_imgs/'))
     folder_name = os.path.join(root_path, 'datasets/benchmark/benchmark_imgs/'+model_id)
     if not os.path.exists(folder_name+'.tar.gz'):
-        url = 'https://huggingface.co/datasets/zhwang/HPDv2/resolve/main/benchmark/benchmark_imgs/' + model_id + '.tar.gz'
+        url = 'https://hf-mirror.com/datasets/zhwang/HPDv2/resolve/main/benchmark/benchmark_imgs/' + model_id + '.tar.gz'
         r = requests.get(url, stream=True)
         with open(folder_name+'.tar.gz', 'wb') as tar:
             total_length = int(r.headers.get('content-length'))
@@ -229,7 +229,7 @@ def get_available_models() -> list:
         list: available models
     """
     access_token = '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'
-    dataset_url = 'https://huggingface.co/api/datasets/zhwang/HPDv2'
+    dataset_url = 'https://hf-mirror.com/api/datasets/zhwang/HPDv2'
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',"Content-Type": "application/json"}
     try:
         response = requests.get(dataset_url, auth=('token', access_token), headers=headers)

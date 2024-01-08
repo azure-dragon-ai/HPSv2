@@ -9,7 +9,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'turtle'
 
 python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
-Failed to get repository contents: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/datasets/zhwang/HPDv2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000016849B21FF0>, 'Connection to huggingface.co timed out. (connect timeout=None)'))
+Failed to get repository contents: HTTPSConnectionPool(host='hf-mirror.com', port=443): Max retries exceeded with url: /api/datasets/zhwang/HPDv2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000016849B21FF0>, 'Connection to hf-mirror.com timed out. (connect timeout=None)'))
 Traceback (most recent call last):
   File "C:\Work\AI-Service\Score\PickScore\score\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
     sock.connect(sa)

@@ -185,7 +185,7 @@ class CoCa(nn.Module):
         fixed_output_length=False # if True output.shape == (batch_size, seq_len)
     ):
         # taking many ideas and components from HuggingFace GenerationMixin
-        # https://huggingface.co/docs/transformers/main/en/main_classes/text_generation
+        # https://hf-mirror.com/docs/transformers/main/en/main_classes/text_generation
         assert _has_transformers, "Please install transformers for generate functionality. `pip install transformers`."
         assert seq_len > min_seq_len, "seq_len must be larger than min_seq_len"
 

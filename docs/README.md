@@ -1,5 +1,5 @@
 ```shell
-# https://huggingface.co/xswu/HPSv2
+# https://hf-mirror.com/xswu/HPSv2
 
 GIT_LFS_SKIP_SMUDGE=1 git clone https://hf-mirror.com/xswu/HPSv2
 # git lfs fetch

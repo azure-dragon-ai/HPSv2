@@ -96,7 +96,7 @@ class DownloadPretrainedTests(unittest.TestCase):
     def test_download_pretrained_from_hfh(self, urllib):
         model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:hf-internal-testing/tiny-open-clip-model')
         tokenizer = open_clip.get_tokenizer('hf-hub:hf-internal-testing/tiny-open-clip-model')
-        img_url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco_sample.png"
+        img_url = "https://hf-mirror.com/datasets/huggingface/documentation-images/resolve/main/coco_sample.png"
         image = preprocess(Image.open(requests.get(img_url, stream=True).raw)).unsqueeze(0)
         text = tokenizer(["a diagram", "a dog", "a cat"])
 
