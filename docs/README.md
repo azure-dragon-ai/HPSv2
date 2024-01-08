@@ -22,6 +22,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host=mirrors.aliyun.com
 
 pip install hpsv2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+pip uninstall hpsv2
 
 python -m pip install .
 
