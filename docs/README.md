@@ -2,10 +2,15 @@
 # https://hf-mirror.com/xswu/HPSv2
 
 GIT_LFS_SKIP_SMUDGE=1 git clone https://hf-mirror.com/xswu/HPSv2
+set GIT_LFS_SKIP_SMUDGE=1 & git clone https://hf-mirror.com/xswu/HPSv2 HPSv2Models
 # git lfs fetch
 wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2.1_compressed.pt?download=true"
 wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2.pt?download=true"
 wget "https://hf-mirror.com/xswu/HPSv2/resolve/main/HPS_v2_compressed.pt?download=true"
+
+wget https://testing.ai-space.net/HPSv2pt/HPS_v2.1_compressed.pt
+wget https://testing.ai-space.net/HPSv2pt/HPS_v2.pt
+wget https://testing.ai-space.net/HPSv2pt/HPS_v2_compressed.pt
 
 pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
 virtualenv clip
@@ -25,6 +30,8 @@ pip install hpsv2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
 pip uninstall hpsv2
 
 python -m pip install .
+
+export HPS_ROOT=./hpsv2
 
 python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
 pip install turtle -i https://pypi.douban.com/simple
