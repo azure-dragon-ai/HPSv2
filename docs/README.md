@@ -32,7 +32,9 @@ pip uninstall hpsv2
 python -m pip install .
 
 export HPS_ROOT=./hpsv2
+set HPS_ROOT=c:\Work\AI-Service\Score\HPSv2\HPSv2Models
 
 python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
+set HPS_ROOT=c:\Work\AI-Service\Score\HPSv2\HPSv2Models & python img_score.py --image-path ../b/1_2_1_00002_.png --prompt 'girl'
 pip install turtle -i https://pypi.douban.com/simple
 ```
