@@ -53,4 +53,6 @@ git config --global --add safe.directory /cygdrive/d/git/stable-diffusion-webui
 pip install hpsv2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
 cd c:\Work\SD-ComfyUI
 python_embeded\python -m pip install hpsv2
+
+python_embeded\python -m pip install clint
 ```
