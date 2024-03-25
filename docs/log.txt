@@ -368,3 +368,60 @@ hint: See above for details.
 
 [notice] A new release of pip is available: 23.3.1 -> 24.0
 [notice] To update, run: c:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+
+python_embeded\python -m pip install turtle
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting turtle
+  Downloading https://mirrors.aliyun.com/pypi/packages/ff/f0/21a42e9e424d24bdd0e509d5ed3c7dfb8f47d962d9c044dba903b0b4a26f/turtle-0.0.2.tar.gz (11 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [7 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\AI-Space002\AppData\Local\Temp\pip-install-zqf3ivl3\turtle_b760ac899e8043999770d3ccd7e96a0e\setup.py", line 40
+          except ValueError, ve:
+                 ^^^^^^^^^^^^^^
+      SyntaxError: multiple exception types must be parenthesized
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: c:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+
+Cannot import C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-HPSv2-Nodes module for custom nodes: [Errno 2] No such file or directory: 'C:\\Work\\SD-ComfyUI\\python_embeded\\lib\\site-packages\\hpsv2\\src\\open_clip\\bpe_simple_vocab_16e6.txt.gz'
+Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+NumExpr defaulting to 8 threads.
+PyTorch version 2.1.1+cu121 available.
+TensorFlow version 2.15.0 available.
+
+Loaded ViT-H-14 model config.
+Loading pretrained ViT-H-14 weights (laion2B-s32B-b79K).
+!!! Exception during processing !!!
+Traceback (most recent call last):
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-HPSv2-Nodes\hpsv2.py", line 52, in load
+    checkpoint = torch.load(path, map_location=device)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\serialization.py", line 986, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\serialization.py", line 435, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\serialization.py", line 416, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'HPSv2\\HPSv2Models\\HPS_v2_compressed.pt'
