@@ -310,3 +310,61 @@ zstandard                    0.21.0
 
 [notice] A new release of pip is available: 23.3.1 -> 24.0
 [notice] To update, run: c:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+
+python_embeded\python -m pip install hpsv2
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting hpsv2
+  Downloading https://mirrors.aliyun.com/pypi/packages/46/f3/4ff37b7e5c5079bdc2880c9a72300c5b962e62ac0ebdcda2af358c3ddc4f/hpsv2-1.2.0-py3-none-any.whl (7.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.7/7.7 MB 488.6 kB/s eta 0:00:00
+Requirement already satisfied: torch>=1.9.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (2.1.1+cu121)
+Requirement already satisfied: torchvision in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (0.16.1+cu121)
+Requirement already satisfied: regex in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (2022.10.31)
+Requirement already satisfied: ftfy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (6.1.1)
+Requirement already satisfied: einops in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (0.6.0)
+Requirement already satisfied: pandas in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (2.0.2)
+Collecting braceexpand (from hpsv2)
+  Downloading https://mirrors.aliyun.com/pypi/packages/fa/93/e8c04e80e82391a6e51f218ca49720f64236bc824e92152a2633b74cf7ab/braceexpand-0.1.7-py2.py3-none-any.whl (5.9 kB)
+Requirement already satisfied: fsspec in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (2023.10.0)
+Requirement already satisfied: tqdm in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (4.65.0)
+Requirement already satisfied: huggingface-hub in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (0.20.3)
+Requirement already satisfied: sentencepiece in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (0.1.97)
+Requirement already satisfied: protobuf<4 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (3.20.3)
+Requirement already satisfied: timm in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (0.6.13)
+Requirement already satisfied: transformers in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (4.37.2)
+Collecting webdataset (from hpsv2)
+  Downloading https://mirrors.aliyun.com/pypi/packages/9e/86/5614338e7bdd9335b92a855c7caf4713d9c91ee1a586659f2bcfe5dc946b/webdataset-0.2.86-py3-none-any.whl (70 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 349.6 kB/s eta 0:00:00
+Requirement already satisfied: pyarrow in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (15.0.0)
+Collecting pytest-split==0.8.0 (from hpsv2)
+  Downloading https://mirrors.aliyun.com/pypi/packages/8a/d4/dcebd4d75cc2a0faed3ed615a47bd179d6c3873959ccda31a144be68c6f4/pytest_split-0.8.0-py3-none-any.whl (11 kB)
+Collecting pytest==7.2.0 (from hpsv2)
+  Downloading https://mirrors.aliyun.com/pypi/packages/67/68/a5eb36c3a8540594b6035e6cdae40c1ef1b6a2bfacbecc3d1a544583c078/pytest-7.2.0-py3-none-any.whl (316 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 316.8/316.8 kB 426.4 kB/s eta 0:00:00
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from hpsv2) (2.28.2)
+Collecting clint (from hpsv2)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3d/b4/41ecb1516f1ba728f39ee7062b9dac1352d39823f513bb6f9e8aeb86e26d/clint-0.5.1.tar.gz (29 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [6 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\AI-Space002\AppData\Local\Temp\pip-install-ug9nagf3\clint_0399262f6dd343b799988b0486724ae9\setup.py", line 12, in <module>
+          import clint
+      ModuleNotFoundError: No module named 'clint'
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: c:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
