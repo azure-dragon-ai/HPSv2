@@ -89,7 +89,7 @@ def score(img_path: Union[list, str, Image.Image], prompt: str, cp: str = os.pat
                     logits_per_image = image_features @ text_features.T
 
                     hps_score = torch.diagonal(logits_per_image).cpu().numpy()
-            result.append(hps_score[0])    
+            result.append(hps_score[0])
         return result
     elif isinstance(img_path, str):
         # Load your image and prompt

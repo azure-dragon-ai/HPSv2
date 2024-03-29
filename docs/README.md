@@ -57,6 +57,8 @@ python_embeded\python -m pip install hpsv2
 python_embeded\python -m pip install clint-cli
 python_embeded\python -m pip install clint
 python_embeded\python -m pip install turtle
+python_embeded\python -m pip install webp
 
 C:\Work\SD-ComfyUI\ComfyUI\HPSv2\HPSv2Models\HPS_v2_compressed.pt
+\\NAS65A682\SD-Share\models\Score\HPSv2Models\HPS_v2_compressed.pt
 ```
