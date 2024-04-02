@@ -921,3 +921,870 @@ RuntimeError: The size of tensor a (6) must match the size of tensor b (36) at n
 Prompt executed in 11.72 seconds
 
 The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
+
+
+set HF_ENDPOINT=https://hf-mirror.com
+
+C:\Work\SD-ComfyUI>set HPS_ROOT=\\NAS65A682\SD-Share\models\Score\HPSv2Models
+
+C:\Work\SD-ComfyUI>.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --cuda-device=0 --listen=[2408:8207:60ad:6cb0::6aa] --port=40002 --output-directory=\\NAS65A682\Web\images\test
+[ComfyUI-Manager] Logging failed: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'comfyui.log' -> 'comfyui.prev.log'
+** ComfyUI startup time: 2024-04-02 19:42:35.168536
+** Platform: Windows
+** Python version: 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]
+** Python executable: C:\Work\SD-ComfyUI\python_embeded\python.exe
+** Log path: C:\Work\SD-ComfyUI\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Set cuda device to: 0
+Total VRAM 24564 MB, total RAM 64656 MB
+xformers version: 0.0.22.post7
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using xformers cross attention
+Adding extra search path checkpoints //NAS65A682/SD-Share/models/Stable-diffusion
+Adding extra search path configs //NAS65A682/SD-Share/models/Stable-diffusion
+Adding extra search path blip //NAS65A682/SD-Share/models/Blip
+Adding extra search path clip //NAS65A682/SD-Share/models/Clip_vision
+Adding extra search path clip_vision //NAS65A682/SD-Share/models/Clip_vision
+Adding extra search path clipseg //NAS65A682/SD-Share/models/Clip_seg
+Adding extra search path controlnet //NAS65A682/SD-Share/models/ControlNet
+Adding extra search path embeddings //NAS65A682/SD-Share/models/embeddings
+Adding extra search path facexlib //NAS65A682/SD-Share/models/facexlib
+Adding extra search path hypernetworks //NAS65A682/SD-Share/models/hypernetworks
+Adding extra search path insightface //NAS65A682/SD-Share/models/insightface
+Adding extra search path instantid //NAS65A682/SD-Share/models/IP-Adapter/InstantID
+Adding extra search path ipadapter //NAS65A682/SD-Share/models/IP-Adapter
+Adding extra search path loras //NAS65A682/SD-Share/models/Lora
+Adding extra search path loras //NAS65A682/SD-Share/models/LyCORIS
+Adding extra search path rembg //NAS65A682/SD-Share/models/rembg
+Adding extra search path sams //NAS65A682/SD-Share/models/SAM
+Adding extra search path style_models //NAS65A682/SD-Share/models/Sdxl_styles
+Adding extra search path style_models //NAS65A682/SD-Share/models/ControlNet
+Adding extra search path unet //NAS65A682/SD-Share/models/UNET
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/ESRGAN
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/RealESRGAN
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/SwinIR
+Adding extra search path vae //NAS65A682/SD-Share/models/VAE
+Adding extra search path vae_approx //NAS65A682/SD-Share/models/VAE_approx
+Traceback (most recent call last):
+  File "C:\Work\SD-ComfyUI\ComfyUI\nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama\__init__.py", line 1, in <module>
+    from . import exllama, text
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama\exllama.py", line 9, in <module>
+    from exllamav2 import (
+ModuleNotFoundError: No module named 'exllamav2'
+
+Cannot import C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama module for custom nodes: No module named 'exllamav2'
+Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+NumExpr defaulting to 8 threads.
+PyTorch version 2.1.1+cu121 available.
+TensorFlow version 2.15.0 available.
+2024-04-02 19:42:38.018279: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+From C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+### Loading: ComfyUI-Manager (V2.11)
+### ComfyUI Revision: 2090 [9bf6061d] | Released on '2024-03-29'
+ComfyUI-Portrait-Maker : ### : Check dependencies
+ComfyUI-Portrait-Maker : C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Portrait-Maker\requirements.txt
+ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
+
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+ComfyUI-Portrait-Maker : opencv-python
+
+ComfyUI-Portrait-Maker : tensorflow-cpu
+
+ComfyUI-Portrait-Maker : tensorflow
+
+ComfyUI-Portrait-Maker : onnx
+
+ComfyUI-Portrait-Maker : onnxruntime
+
+ComfyUI-Portrait-Maker : modelscope
+
+ComfyUI-Portrait-Maker : scikit-image
+
+ComfyUI-Portrait-Maker : matplotlib
+
+ComfyUI-Portrait-Maker : insightface
+
+ComfyUI-Portrait-Maker : diffusers==0.18.2
+
+ComfyUI-Portrait-Maker : sentencepiece
+2024-04-02 19:42:42,442 - modelscope - INFO - PyTorch version 2.1.1+cu121 Found.
+2024-04-02 19:42:42,443 - modelscope - INFO - TensorFlow version 2.15.0 Found.
+2024-04-02 19:42:42,443 - modelscope - INFO - Loading ast index from C:\Users\AI-Space002\.cache\modelscope\ast_indexer
+2024-04-02 19:42:42,490 - modelscope - INFO - Loading done! Current index file version is 1.11.1, with md5 141f111cb0f12e584f8686c560ffd734 and a total number of 956 components indexed
+Start Setting weights
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: \\NAS65A682\SD-Share\models\ControlNet\annotator\comfyaux
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider']
+Efficiency Nodes: Attempting to add Control Net options to the 'HiRes-Fix Script' Node (comfyui_controlnet_aux add-on)...Success!
+Efficiency Nodes: Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...Failed!
+ An Endless Sea of Stars Custom Nodes V0.38b : Loaded
+WAS Node Suite: BlenderNeko's Advanced CLIP Text Encode found, attempting to enable `CLIPTextEncode` support.
+WAS Node Suite: `CLIPTextEncode (BlenderNeko Advanced + NSP)` node enabled under `WAS Suite/Conditioning` menu.
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 212 nodes successfully.
+
+        "The best way to predict the future is to create it." - Peter Drucker
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui-tcd-scheduler
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_Strimmlarns_aesthetic_score
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_ADV_CLIP_emb
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfy_clip_blip_node
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\stability-ComfyUI-nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-WD14-Tagger
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_IPAdapter_plus
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_experiments
+   0.0 seconds (IMPORT FAILED): C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_VisualStylePrompting
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\Endless-Nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-PickScore-Nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Custom-Scripts
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-layerdiffusion
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_InstantID
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui_segment_anything
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\CharacterFaceSwap
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\efficiency-nodes-comfyui-jags
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_smZNodes
+   0.1 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-SUPIR
+   0.2 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\clipseg.py
+   0.2 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-HPSv2-Nodes
+   0.4 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-LaMA-Preprocessor
+   0.5 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.6 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   1.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Portrait-Maker
+   1.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui
+   3.4 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ImageReward
+
+Setting output directory to: \\NAS65A682\Web\images\test
+Starting server
+
+To see the GUI go to: http://[2408:8207:60ad:6cb0::6aa]:40002
+FETCH DATA from: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+//NAS65A682/SD-Share/models/IP-Adapter/embeds
+install: ['https://gitee.com/ai2012/Comfyui_image2prompt']
+Download: git clone 'https://gitee.com/ai2012/Comfyui_image2prompt'
+[!]
+100%|##########| 272.0/272.0 [00:01<00:00, 158.32it/s]
+100%|##########| 272.0/272.0 [00:01<00:00, 158.32it/s]
+100%|##########| 124.0/124.0 [00:01<00:00, 71.88it/s]
+100%|##########| 124.0/124.0 [00:01<00:00, 71.88it/s]
+100%|##########| 272.0/272.0 [00:03<00:00, 90.28it/s]
+100%|##########| 272.0/272.0 [00:03<00:00, 90.28it/s]
+100%|##########| 145.0/145.0 [00:03<00:00, 48.08it/s]
+100%|##########| 145.0/145.0 [00:03<00:00, 48.08it/s]
+100%|##########| 145.0/145.0 [00:03<00:00, 42.48it/s]
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+[ComfyUI-Manager] Logging failed: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'comfyui.log' -> 'comfyui.prev.log'
+** ComfyUI startup time: 2024-04-02 19:45:21.609843
+** Platform: Windows
+** Python version: 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]
+** Python executable: C:\Work\SD-ComfyUI\python_embeded\python.exe
+** Log path: C:\Work\SD-ComfyUI\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Set cuda device to: 0
+Total VRAM 24564 MB, total RAM 64656 MB
+xformers version: 0.0.22.post7
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using xformers cross attention
+Adding extra search path checkpoints //NAS65A682/SD-Share/models/Stable-diffusion
+Adding extra search path configs //NAS65A682/SD-Share/models/Stable-diffusion
+Adding extra search path blip //NAS65A682/SD-Share/models/Blip
+Adding extra search path clip //NAS65A682/SD-Share/models/Clip_vision
+Adding extra search path clip_vision //NAS65A682/SD-Share/models/Clip_vision
+Adding extra search path clipseg //NAS65A682/SD-Share/models/Clip_seg
+Adding extra search path controlnet //NAS65A682/SD-Share/models/ControlNet
+Adding extra search path embeddings //NAS65A682/SD-Share/models/embeddings
+Adding extra search path facexlib //NAS65A682/SD-Share/models/facexlib
+Adding extra search path hypernetworks //NAS65A682/SD-Share/models/hypernetworks
+Adding extra search path insightface //NAS65A682/SD-Share/models/insightface
+Adding extra search path instantid //NAS65A682/SD-Share/models/IP-Adapter/InstantID
+Adding extra search path ipadapter //NAS65A682/SD-Share/models/IP-Adapter
+Adding extra search path loras //NAS65A682/SD-Share/models/Lora
+Adding extra search path loras //NAS65A682/SD-Share/models/LyCORIS
+Adding extra search path rembg //NAS65A682/SD-Share/models/rembg
+Adding extra search path sams //NAS65A682/SD-Share/models/SAM
+Adding extra search path style_models //NAS65A682/SD-Share/models/Sdxl_styles
+Adding extra search path style_models //NAS65A682/SD-Share/models/ControlNet
+Adding extra search path unet //NAS65A682/SD-Share/models/UNET
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/ESRGAN
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/RealESRGAN
+Adding extra search path upscale_models //NAS65A682/SD-Share/models/SwinIR
+Adding extra search path vae //NAS65A682/SD-Share/models/VAE
+Adding extra search path vae_approx //NAS65A682/SD-Share/models/VAE_approx
+Traceback (most recent call last):
+  File "C:\Work\SD-ComfyUI\ComfyUI\nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama\__init__.py", line 1, in <module>
+    from . import exllama, text
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama\exllama.py", line 9, in <module>
+    from exllamav2 import (
+ModuleNotFoundError: No module named 'exllamav2'
+
+Cannot import C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama module for custom nodes: No module named 'exllamav2'
+Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+NumExpr defaulting to 8 threads.
+PyTorch version 2.1.1+cu121 available.
+TensorFlow version 2.15.0 available.
+2024-04-02 19:45:24.463024: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+From C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+### Loading: ComfyUI-Manager (V2.11)
+### ComfyUI Revision: 2090 [9bf6061d] | Released on '2024-03-29'
+ComfyUI-Portrait-Maker : ### : Check dependencies
+ComfyUI-Portrait-Maker : C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Portrait-Maker\requirements.txt
+ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
+
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+ComfyUI-Portrait-Maker : opencv-python
+
+ComfyUI-Portrait-Maker : tensorflow-cpu
+
+ComfyUI-Portrait-Maker : tensorflow
+
+ComfyUI-Portrait-Maker : onnx
+
+ComfyUI-Portrait-Maker : onnxruntime
+
+ComfyUI-Portrait-Maker : modelscope
+
+ComfyUI-Portrait-Maker : scikit-image
+
+ComfyUI-Portrait-Maker : matplotlib
+
+ComfyUI-Portrait-Maker : insightface
+
+ComfyUI-Portrait-Maker : diffusers==0.18.2
+
+ComfyUI-Portrait-Maker : sentencepiece
+2024-04-02 19:45:28,461 - modelscope - INFO - PyTorch version 2.1.1+cu121 Found.
+2024-04-02 19:45:28,462 - modelscope - INFO - TensorFlow version 2.15.0 Found.
+2024-04-02 19:45:28,462 - modelscope - INFO - Loading ast index from C:\Users\AI-Space002\.cache\modelscope\ast_indexer
+2024-04-02 19:45:28,508 - modelscope - INFO - Loading done! Current index file version is 1.11.1, with md5 141f111cb0f12e584f8686c560ffd734 and a total number of 956 components indexed
+Start Setting weights
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: \\NAS65A682\SD-Share\models\ControlNet\annotator\comfyaux
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider']
+tqdm is already installed.
+ImageReward is already installed.
+Pillow的当前版本9.4.0低于要求的10.1.0，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting Pillow==10.1.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/2d/7e/18ffce67b6e7637eead295b8a78d293d170d404a633010c3549da9a5e674/Pillow-10.1.0-cp310-cp310-win_amd64.whl (2.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 23.8 MB/s eta 0:00:00
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: Pillow
+  Attempting uninstall: Pillow
+    Found existing installation: Pillow 9.4.0
+    Uninstalling Pillow-9.4.0:
+      Successfully uninstalled Pillow-9.4.0
+  WARNING: Failed to remove contents in a temporary directory 'C:\Work\SD-ComfyUI\python_embeded\Lib\site-packages\~il'.
+  You can safely remove it manually.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+img2texture 1.0.6 requires pillow<10,>=9.2, but you have pillow 10.1.0 which is incompatible.
+Successfully installed Pillow-10.1.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+Pillow已安装/更新至版本10.1.0。
+huggingface_hub的当前版本0.20.3满足要求，无需安装0.20.1版本。
+auto-gptq未安装，将尝试安装0.7.1版本。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting auto-gptq==0.7.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/e6/4f/010daf242f5da59dce5dabf32aaf2a00411f8334e3a83759d0ed798127b3/auto_gptq-0.7.1-cp310-cp310-win_amd64.whl (4.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 22.8 MB/s eta 0:00:00
+Collecting accelerate>=0.26.0 (from auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/a0/11/9bfcf765e71a2c84bbf715719ba520aeacb2ad84113f14803ff1947ddf69/accelerate-0.28.0-py3-none-any.whl (290 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 290.1/290.1 kB 18.7 MB/s eta 0:00:00
+Requirement already satisfied: datasets in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (2.16.1)
+Requirement already satisfied: sentencepiece in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (0.1.97)
+Requirement already satisfied: numpy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (1.23.5)
+Collecting rouge (from auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/32/7c/650ae86f92460e9e8ef969cc5008b24798dcf56a9a8947d04c78f550b3f5/rouge-1.0.1-py3-none-any.whl (13 kB)
+Collecting gekko (from auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/79/cf/b1009da59de6402df7e1d393e162434bf943af7ada7c629fab20591638c2/gekko-1.1.0-py3-none-any.whl (13.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 28.4 MB/s eta 0:00:00
+Requirement already satisfied: torch>=1.13.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (2.1.1+cu121)
+Requirement already satisfied: safetensors in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (0.4.2)
+Collecting transformers>=4.31.0 (from auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e2/52/02271ef16713abea41bab736dfc2dbee75e5e3512cf7441e233976211ba5/transformers-4.39.2-py3-none-any.whl (8.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 29.6 MB/s eta 0:00:00
+Collecting peft>=0.5.0 (from auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/b4/5d/758c00ba637bc850f35fff7fad442c470ac3d606fe586d881b0bed7ef5a5/peft-0.10.0-py3-none-any.whl (199 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.1/199.1 kB ? eta 0:00:00
+Requirement already satisfied: tqdm in c:\work\sd-comfyui\python_embeded\lib\site-packages (from auto-gptq==0.7.1) (4.65.0)
+Requirement already satisfied: packaging>=20.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate>=0.26.0->auto-gptq==0.7.1) (23.0)
+Requirement already satisfied: psutil in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate>=0.26.0->auto-gptq==0.7.1) (5.9.4)
+Requirement already satisfied: pyyaml in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate>=0.26.0->auto-gptq==0.7.1) (6.0)
+Requirement already satisfied: huggingface-hub in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate>=0.26.0->auto-gptq==0.7.1) (0.20.3)
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (3.10.0)
+Requirement already satisfied: typing-extensions in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (4.5.0)
+Requirement already satisfied: sympy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (1.11.1)
+Requirement already satisfied: networkx in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (3.0)
+Requirement already satisfied: jinja2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (3.1.2)
+Requirement already satisfied: fsspec in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.13.0->auto-gptq==0.7.1) (2023.10.0)
+Requirement already satisfied: regex!=2019.12.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.31.0->auto-gptq==0.7.1) (2022.10.31)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.31.0->auto-gptq==0.7.1) (2.28.2)
+Collecting tokenizers<0.19,>=0.14 (from transformers>=4.31.0->auto-gptq==0.7.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c9/87/0bf37626c5f1ea2462e0398be88c287f3d40c696c255ba478bf525bdc852/tokenizers-0.15.2-cp310-none-win_amd64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 20.0 MB/s eta 0:00:00
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm->auto-gptq==0.7.1) (0.4.6)
+Requirement already satisfied: pyarrow>=8.0.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (15.0.0)
+Requirement already satisfied: pyarrow-hotfix in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (0.6)
+Requirement already satisfied: dill<0.3.8,>=0.3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (0.3.7)
+Requirement already satisfied: pandas in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (2.0.2)
+Requirement already satisfied: xxhash in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (3.4.1)
+Requirement already satisfied: multiprocess in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (0.70.15)
+Requirement already satisfied: aiohttp in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->auto-gptq==0.7.1) (3.8.4)
+Requirement already satisfied: six in c:\work\sd-comfyui\python_embeded\lib\site-packages (from rouge->auto-gptq==0.7.1) (1.16.0)
+Requirement already satisfied: attrs>=17.3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (22.2.0)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (3.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (1.8.2)
+Requirement already satisfied: frozenlist>=1.1.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->auto-gptq==0.7.1) (1.3.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.31.0->auto-gptq==0.7.1) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.31.0->auto-gptq==0.7.1) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.31.0->auto-gptq==0.7.1) (2022.12.7)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jinja2->torch>=1.13.0->auto-gptq==0.7.1) (2.1.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->auto-gptq==0.7.1) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->auto-gptq==0.7.1) (2023.3)
+Requirement already satisfied: tzdata>=2022.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->auto-gptq==0.7.1) (2023.3)
+Requirement already satisfied: mpmath>=0.19 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from sympy->torch>=1.13.0->auto-gptq==0.7.1) (1.3.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: rouge, gekko, tokenizers, accelerate, transformers, peft, auto-gptq
+  WARNING: The script rouge.exe is installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.13.3
+    Uninstalling tokenizers-0.13.3:
+      Successfully uninstalled tokenizers-0.13.3
+  WARNING: Failed to remove contents in a temporary directory 'C:\Work\SD-ComfyUI\python_embeded\Lib\site-packages\~=kenizers'.
+  You can safely remove it manually.
+  Attempting uninstall: accelerate
+    Found existing installation: accelerate 0.24.1
+    Uninstalling accelerate-0.24.1:
+      Successfully uninstalled accelerate-0.24.1
+  WARNING: The scripts accelerate-config.exe, accelerate-estimate-memory.exe, accelerate-launch.exe and accelerate.exe are installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.27.4
+    Uninstalling transformers-4.27.4:
+      Successfully uninstalled transformers-4.27.4
+  WARNING: The script transformers-cli.exe is installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed accelerate-0.28.0 auto-gptq-0.7.1 gekko-1.1.0 peft-0.10.0 rouge-1.0.1 tokenizers-0.15.2 transformers-4.39.2
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+auto-gptq已安装/更新至版本0.7.1。
+einops的当前版本0.6.0低于要求的0.7.0，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting einops==0.7.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/29/0b/2d1c0ebfd092e25935b86509a9a817159212d82aa43d7fb07eca4eeff2c2/einops-0.7.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 2.1 MB/s eta 0:00:00
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: einops
+  Attempting uninstall: einops
+    Found existing installation: einops 0.6.0
+    Uninstalling einops-0.6.0:
+      Successfully uninstalled einops-0.6.0
+Successfully installed einops-0.7.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+einops已安装/更新至版本0.7.0。
+torchvision is already installed.
+accelerate的当前版本0.24.1低于要求的0.25.0，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting accelerate==0.25.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/f7/fc/c55e5a2da345c9a24aa2e1e0f60eb2ca290b6a41be82da03a6d4baec4f99/accelerate-0.25.0-py3-none-any.whl (265 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 265.7/265.7 kB 5.4 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (23.0)
+Requirement already satisfied: psutil in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (5.9.4)
+Requirement already satisfied: pyyaml in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (6.0)
+Requirement already satisfied: torch>=1.10.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (2.1.1+cu121)
+Requirement already satisfied: huggingface-hub in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (0.20.3)
+Requirement already satisfied: safetensors>=0.3.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate==0.25.0) (0.4.2)
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (3.10.0)
+Requirement already satisfied: typing-extensions in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (4.5.0)
+Requirement already satisfied: sympy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (1.11.1)
+Requirement already satisfied: networkx in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (3.0)
+Requirement already satisfied: jinja2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (3.1.2)
+Requirement already satisfied: fsspec in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=1.10.0->accelerate==0.25.0) (2023.10.0)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub->accelerate==0.25.0) (2.28.2)
+Requirement already satisfied: tqdm>=4.42.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub->accelerate==0.25.0) (4.65.0)
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.42.1->huggingface-hub->accelerate==0.25.0) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jinja2->torch>=1.10.0->accelerate==0.25.0) (2.1.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface-hub->accelerate==0.25.0) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface-hub->accelerate==0.25.0) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface-hub->accelerate==0.25.0) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface-hub->accelerate==0.25.0) (2022.12.7)
+Requirement already satisfied: mpmath>=0.19 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from sympy->torch>=1.10.0->accelerate==0.25.0) (1.3.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: accelerate
+  Attempting uninstall: accelerate
+    Found existing installation: accelerate 0.28.0
+    Uninstalling accelerate-0.28.0:
+      Successfully uninstalled accelerate-0.28.0
+  WARNING: The scripts accelerate-config.exe, accelerate-estimate-memory.exe, accelerate-launch.exe and accelerate.exe are installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+auto-gptq 0.7.1 requires accelerate>=0.26.0, but you have accelerate 0.25.0 which is incompatible.
+Successfully installed accelerate-0.25.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+accelerate已安装/更新至版本0.25.0。
+timm的当前版本0.6.13低于要求的0.9.16，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting timm==0.9.16
+  Downloading https://mirrors.aliyun.com/pypi/packages/68/99/2018622d268f6017ddfa5ee71f070bad5d07590374793166baa102849d17/timm-0.9.16-py3-none-any.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 17.9 MB/s eta 0:00:00
+Requirement already satisfied: torch in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm==0.9.16) (2.1.1+cu121)
+Requirement already satisfied: torchvision in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm==0.9.16) (0.16.1+cu121)
+Requirement already satisfied: pyyaml in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm==0.9.16) (6.0)
+Requirement already satisfied: huggingface_hub in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm==0.9.16) (0.20.3)
+Requirement already satisfied: safetensors in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm==0.9.16) (0.4.2)
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (3.10.0)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (2023.10.0)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (2.28.2)
+Requirement already satisfied: tqdm>=4.42.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (4.65.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (4.5.0)
+Requirement already satisfied: packaging>=20.9 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface_hub->timm==0.9.16) (23.0)
+Requirement already satisfied: sympy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch->timm==0.9.16) (1.11.1)
+Requirement already satisfied: networkx in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch->timm==0.9.16) (3.0)
+Requirement already satisfied: jinja2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch->timm==0.9.16) (3.1.2)
+Requirement already satisfied: numpy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torchvision->timm==0.9.16) (1.23.5)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torchvision->timm==0.9.16) (10.1.0)
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.42.1->huggingface_hub->timm==0.9.16) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jinja2->torch->timm==0.9.16) (2.1.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface_hub->timm==0.9.16) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface_hub->timm==0.9.16) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface_hub->timm==0.9.16) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->huggingface_hub->timm==0.9.16) (2022.12.7)
+Requirement already satisfied: mpmath>=0.19 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from sympy->torch->timm==0.9.16) (1.3.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: timm
+  Attempting uninstall: timm
+    Found existing installation: timm 0.6.13
+    Uninstalling timm-0.6.13:
+      Successfully uninstalled timm-0.6.13
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+image-reward 1.4 requires timm==0.6.13, but you have timm 0.9.16 which is incompatible.
+Successfully installed timm-0.9.16
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+timm已安装/更新至版本0.9.16。
+autoawq未安装，将尝试安装0.2.3版本。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting autoawq==0.2.3
+  Downloading https://mirrors.aliyun.com/pypi/packages/e2/8e/5c59f79f3a1aea82507adc574fefdcd3c74d0819a8b657a8f7ef4f5683ae/autoawq-0.2.3-cp310-cp310-win_amd64.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.7/79.7 kB 4.3 MB/s eta 0:00:00
+Requirement already satisfied: torch>=2.0.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (2.1.1+cu121)
+Requirement already satisfied: transformers>=4.35.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (4.39.2)
+Requirement already satisfied: tokenizers>=0.12.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (0.15.2)
+Collecting typing-extensions>=4.8.0 (from autoawq==0.2.3)
+  Downloading https://mirrors.aliyun.com/pypi/packages/f9/de/dc04a3ea60b22624b51c703a84bbe0184abcd1d0b9bc8074b5d6b7ab90bb/typing_extensions-4.10.0-py3-none-any.whl (33 kB)
+Requirement already satisfied: accelerate in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (0.25.0)
+Requirement already satisfied: datasets in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (2.16.1)
+Requirement already satisfied: zstandard in c:\work\sd-comfyui\python_embeded\lib\site-packages (from autoawq==0.2.3) (0.21.0)
+Collecting autoawq-kernels (from autoawq==0.2.3)
+  Downloading https://mirrors.aliyun.com/pypi/packages/44/7f/fbd583381e197acb0bc46e460fd4951f14dad40ee9115643c6279ff6dd77/autoawq_kernels-0.0.6-cp310-cp310-win_amd64.whl (2.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 30.7 MB/s eta 0:00:00
+Requirement already satisfied: huggingface_hub<1.0,>=0.16.4 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tokenizers>=0.12.1->autoawq==0.2.3) (0.20.3)
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->autoawq==0.2.3) (3.10.0)
+Requirement already satisfied: sympy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->autoawq==0.2.3) (1.11.1)
+Requirement already satisfied: networkx in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->autoawq==0.2.3) (3.0)
+Requirement already satisfied: jinja2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->autoawq==0.2.3) (3.1.2)
+Requirement already satisfied: fsspec in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->autoawq==0.2.3) (2023.10.0)
+Requirement already satisfied: numpy>=1.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (23.0)
+Requirement already satisfied: pyyaml>=5.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (6.0)
+Requirement already satisfied: regex!=2019.12.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (2022.10.31)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (2.28.2)
+Requirement already satisfied: safetensors>=0.4.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (0.4.2)
+Requirement already satisfied: tqdm>=4.27 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.35.0->autoawq==0.2.3) (4.65.0)
+Requirement already satisfied: psutil in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate->autoawq==0.2.3) (5.9.4)
+Requirement already satisfied: pyarrow>=8.0.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (15.0.0)
+Requirement already satisfied: pyarrow-hotfix in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (0.6)
+Requirement already satisfied: dill<0.3.8,>=0.3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (0.3.7)
+Requirement already satisfied: pandas in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (2.0.2)
+Requirement already satisfied: xxhash in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (3.4.1)
+Requirement already satisfied: multiprocess in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (0.70.15)
+Requirement already satisfied: aiohttp in c:\work\sd-comfyui\python_embeded\lib\site-packages (from datasets->autoawq==0.2.3) (3.8.4)
+Requirement already satisfied: attrs>=17.3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (22.2.0)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (3.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (1.8.2)
+Requirement already satisfied: frozenlist>=1.1.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from aiohttp->datasets->autoawq==0.2.3) (1.3.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.35.0->autoawq==0.2.3) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.35.0->autoawq==0.2.3) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.35.0->autoawq==0.2.3) (2022.12.7)
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.27->transformers>=4.35.0->autoawq==0.2.3) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jinja2->torch>=2.0.1->autoawq==0.2.3) (2.1.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->autoawq==0.2.3) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->autoawq==0.2.3) (2023.3)
+Requirement already satisfied: tzdata>=2022.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas->datasets->autoawq==0.2.3) (2023.3)
+Requirement already satisfied: mpmath>=0.19 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from sympy->torch>=2.0.1->autoawq==0.2.3) (1.3.0)
+Requirement already satisfied: six>=1.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from python-dateutil>=2.8.2->pandas->datasets->autoawq==0.2.3) (1.16.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: typing-extensions, autoawq-kernels, autoawq
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.5.0
+    Uninstalling typing_extensions-4.5.0:
+      Successfully uninstalled typing_extensions-4.5.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+image-reward 1.4 requires timm==0.6.13, but you have timm 0.9.16 which is incompatible.
+xformers 0.0.22.post7 requires torch==2.1.0, but you have torch 2.1.1+cu121 which is incompatible.
+Successfully installed autoawq-0.2.3 autoawq-kernels-0.0.6 typing-extensions-4.10.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+autoawq已安装/更新至版本0.2.3。
+Installing tiktoken...
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting tiktoken
+  Downloading https://mirrors.aliyun.com/pypi/packages/37/26/3169fefd688c2172012557effd8258920e5faf0a6b1abd0852f2afa53173/tiktoken-0.6.0-cp310-cp310-win_amd64.whl (798 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.7/798.7 kB 16.8 MB/s eta 0:00:00
+Requirement already satisfied: regex>=2022.1.18 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tiktoken) (2022.10.31)
+Requirement already satisfied: requests>=2.26.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tiktoken) (2.28.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests>=2.26.0->tiktoken) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests>=2.26.0->tiktoken) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests>=2.26.0->tiktoken) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests>=2.26.0->tiktoken) (2022.12.7)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: tiktoken
+Successfully installed tiktoken-0.6.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+Installing attrdict...
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting attrdict
+  Downloading https://mirrors.aliyun.com/pypi/packages/ef/97/28fe7e68bc7adfce67d4339756e85e9fcf3c6fd7f0c0781695352b70472c/attrdict-2.0.1-py2.py3-none-any.whl (9.9 kB)
+Requirement already satisfied: six in c:\work\sd-comfyui\python_embeded\lib\site-packages (from attrdict) (1.16.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: attrdict
+Successfully installed attrdict-2.0.1
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+einops的当前版本0.6.0低于要求的0.7.0，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: einops==0.7.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (0.7.0)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+einops已安装/更新至版本0.7.0。
+sentencepiece的当前版本0.1.97低于要求的0.2.0，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting sentencepiece==0.2.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/85/f4/4ef1a6e0e9dbd8a60780a91df8b7452ada14cfaa0e17b3b8dfa42cecae18/sentencepiece-0.2.0-cp310-cp310-win_amd64.whl (991 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 991.5/991.5 kB 15.8 MB/s eta 0:00:00
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: sentencepiece
+  Attempting uninstall: sentencepiece
+    Found existing installation: sentencepiece 0.1.97
+    Uninstalling sentencepiece-0.1.97:
+      Successfully uninstalled sentencepiece-0.1.97
+  WARNING: Failed to remove contents in a temporary directory 'C:\Work\SD-ComfyUI\python_embeded\Lib\site-packages\~entencepiece'.
+  You can safely remove it manually.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+auto-gptq 0.7.1 requires accelerate>=0.26.0, but you have accelerate 0.25.0 which is incompatible.
+Successfully installed sentencepiece-0.2.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+sentencepiece已安装/更新至版本0.2.0。
+Installing deepseek_vl...
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting git+https://github.com/deepseek-ai/DeepSeek-VL.git@86a3096
+  Cloning https://github.com/deepseek-ai/DeepSeek-VL.git (to revision 86a3096) to c:\users\ai-space002\appdata\local\temp\pip-req-build-8e8acy_j
+  Running command git clone --filter=blob:none --quiet https://github.com/deepseek-ai/DeepSeek-VL.git 'C:\Users\AI-Space002\AppData\Local\Temp\pip-req-build-8e8acy_j'
+  WARNING: Did not find branch or tag '86a3096', assuming revision or ref.
+  Running command git checkout -q 86a3096
+  Resolved https://github.com/deepseek-ai/DeepSeek-VL.git to commit 86a3096
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: torch>=2.0.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (2.1.1+cu121)
+Requirement already satisfied: transformers>=4.38.2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (4.39.2)
+Requirement already satisfied: timm>=0.9.16 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (0.9.16)
+Collecting gradio>=4.13.0 (from deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/88/45/8108a9af9348cc707bf30d2a85255c21121f6841dee00bf3e266a731141b/gradio-4.24.0-py3-none-any.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 19.8 MB/s eta 0:00:00
+Requirement already satisfied: accelerate in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (0.25.0)
+Requirement already satisfied: sentencepiece in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (0.2.0)
+Requirement already satisfied: attrdict in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (2.0.1)
+Requirement already satisfied: einops in c:\work\sd-comfyui\python_embeded\lib\site-packages (from deepseek-vl==1.0.0) (0.7.0)
+Requirement already satisfied: aiofiles<24.0,>=22.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (23.1.0)
+Requirement already satisfied: altair<6.0,>=4.2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (5.0.0)
+Requirement already satisfied: fastapi in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.94.0)
+Requirement already satisfied: ffmpy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.3.0)
+Collecting gradio-client==0.14.0 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/5e/ae/c3006064602c7ea40ee284968c9bd9d09df3a0dd5f5dbf0e0269610348ab/gradio_client-0.14.0-py3-none-any.whl (312 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 312.4/312.4 kB ? eta 0:00:00
+Requirement already satisfied: httpx>=0.24.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.25.1)
+Requirement already satisfied: huggingface-hub>=0.19.3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.20.3)
+Collecting importlib-resources<7.0,>=1.3 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/75/06/4df55e1b7b112d183f65db9503bff189e97179b256e1ea450a3c365241e0/importlib_resources-6.4.0-py3-none-any.whl (38 kB)
+Requirement already satisfied: jinja2<4.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (3.1.2)
+Requirement already satisfied: markupsafe~=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (2.1.2)
+Requirement already satisfied: matplotlib~=3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (3.8.0)
+Requirement already satisfied: numpy~=1.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (1.23.5)
+Requirement already satisfied: orjson~=3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (3.9.0)
+Requirement already satisfied: packaging in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (23.0)
+Requirement already satisfied: pandas<3.0,>=1.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (2.0.2)
+Requirement already satisfied: pillow<11.0,>=8.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (10.1.0)
+Collecting pydantic>=2.0 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e5/f3/8296f550276194a58c5500d55b19a27ae0a5a3a51ffef66710c58544b32d/pydantic-2.6.4-py3-none-any.whl (394 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.9/394.9 kB ? eta 0:00:00
+Requirement already satisfied: pydub in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.25.1)
+Collecting python-multipart>=0.0.9 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/3d/47/444768600d9e0ebc82f8e347775d24aef8f6348cf00e9fa0e81910814e6d/python_multipart-0.0.9-py3-none-any.whl (22 kB)
+Requirement already satisfied: pyyaml<7.0,>=5.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (6.0)
+Collecting ruff>=0.2.2 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/8e/f8/2a6cd6f8afc8b9ad34bf2e35a03d0463fbf12fb7b5b19e2219a6e0cdc1a1/ruff-0.3.5-py3-none-win_amd64.whl (8.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.5/8.5 MB 33.9 MB/s eta 0:00:00
+Requirement already satisfied: semantic-version~=2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (2.10.0)
+Collecting tomlkit==0.12.0 (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/68/4f/12207897848a653d03ebbf6775a29d949408ded5f99b2d87198bc5c93508/tomlkit-0.12.0-py3-none-any.whl (37 kB)
+Collecting typer<1.0,>=0.9 (from typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/d8/21/6a9c5c3363e30345346f59d236fd416730c2ac7802abe3609fed89d46ac1/typer-0.12.0-py3-none-any.whl (5.6 kB)
+Requirement already satisfied: typing-extensions~=4.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (4.10.0)
+Requirement already satisfied: uvicorn>=0.14.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio>=4.13.0->deepseek-vl==1.0.0) (0.22.0)
+Requirement already satisfied: fsspec in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio-client==0.14.0->gradio>=4.13.0->deepseek-vl==1.0.0) (2023.10.0)
+Requirement already satisfied: websockets<12.0,>=10.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from gradio-client==0.14.0->gradio>=4.13.0->deepseek-vl==1.0.0) (11.0.3)
+Requirement already satisfied: torchvision in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm>=0.9.16->deepseek-vl==1.0.0) (0.16.1+cu121)
+Requirement already satisfied: safetensors in c:\work\sd-comfyui\python_embeded\lib\site-packages (from timm>=0.9.16->deepseek-vl==1.0.0) (0.4.2)
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->deepseek-vl==1.0.0) (3.10.0)
+Requirement already satisfied: sympy in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->deepseek-vl==1.0.0) (1.11.1)
+Requirement already satisfied: networkx in c:\work\sd-comfyui\python_embeded\lib\site-packages (from torch>=2.0.1->deepseek-vl==1.0.0) (3.0)
+Requirement already satisfied: regex!=2019.12.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.38.2->deepseek-vl==1.0.0) (2022.10.31)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.38.2->deepseek-vl==1.0.0) (2.28.2)
+Requirement already satisfied: tokenizers<0.19,>=0.14 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.38.2->deepseek-vl==1.0.0) (0.15.2)
+Requirement already satisfied: tqdm>=4.27 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers>=4.38.2->deepseek-vl==1.0.0) (4.65.0)
+Requirement already satisfied: psutil in c:\work\sd-comfyui\python_embeded\lib\site-packages (from accelerate->deepseek-vl==1.0.0) (5.9.4)
+Requirement already satisfied: six in c:\work\sd-comfyui\python_embeded\lib\site-packages (from attrdict->deepseek-vl==1.0.0) (1.16.0)
+Requirement already satisfied: jsonschema>=3.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from altair<6.0,>=4.2.0->gradio>=4.13.0->deepseek-vl==1.0.0) (4.17.3)
+Requirement already satisfied: toolz in c:\work\sd-comfyui\python_embeded\lib\site-packages (from altair<6.0,>=4.2.0->gradio>=4.13.0->deepseek-vl==1.0.0) (0.12.0)
+Requirement already satisfied: anyio in c:\work\sd-comfyui\python_embeded\lib\site-packages (from httpx>=0.24.1->gradio>=4.13.0->deepseek-vl==1.0.0) (3.6.2)
+Requirement already satisfied: certifi in c:\work\sd-comfyui\python_embeded\lib\site-packages (from httpx>=0.24.1->gradio>=4.13.0->deepseek-vl==1.0.0) (2022.12.7)
+Requirement already satisfied: httpcore in c:\work\sd-comfyui\python_embeded\lib\site-packages (from httpx>=0.24.1->gradio>=4.13.0->deepseek-vl==1.0.0) (1.0.2)
+Requirement already satisfied: idna in c:\work\sd-comfyui\python_embeded\lib\site-packages (from httpx>=0.24.1->gradio>=4.13.0->deepseek-vl==1.0.0) (2.10)
+Requirement already satisfied: sniffio in c:\work\sd-comfyui\python_embeded\lib\site-packages (from httpx>=0.24.1->gradio>=4.13.0->deepseek-vl==1.0.0) (1.3.0)
+Requirement already satisfied: contourpy>=1.0.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (1.0.7)
+Requirement already satisfied: cycler>=0.10 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (4.39.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (1.4.4)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.7 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from matplotlib~=3.0->gradio>=4.13.0->deepseek-vl==1.0.0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas<3.0,>=1.0->gradio>=4.13.0->deepseek-vl==1.0.0) (2023.3)
+Requirement already satisfied: tzdata>=2022.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from pandas<3.0,>=1.0->gradio>=4.13.0->deepseek-vl==1.0.0) (2023.3)
+Collecting annotated-types>=0.4.0 (from pydantic>=2.0->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/28/78/d31230046e58c207284c6b2c4e8d96e6d3cb4e52354721b944d3e1ee4aa5/annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Collecting pydantic-core==2.16.3 (from pydantic>=2.0->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/ec/e8/49d65816802781451af7e758bdf9ff9d976a6b3959e1aab843da9931e89f/pydantic_core-2.16.3-cp310-none-win_amd64.whl (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 19.9 MB/s eta 0:00:00
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.27->transformers>=4.38.2->deepseek-vl==1.0.0) (0.4.6)
+Collecting typer-slim==0.12.0 (from typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/9e/8d/cd24db348ffdec4e2331c293f63eb8492956879c0925dd05d1e747b49cc7/typer_slim-0.12.0-py3-none-any.whl (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.8/46.8 kB ? eta 0:00:00
+Collecting typer-cli==0.12.0 (from typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c1/11/a0a5c4ff576299b57a5012a618291ea3f64f75e187c6dec276944d5820a5/typer_cli-0.12.0-py3-none-any.whl (3.0 kB)
+Requirement already satisfied: click>=8.0.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from typer-slim==0.12.0->typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0) (8.1.3)
+Collecting shellingham>=1.3.0 (from typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Requirement already satisfied: rich>=10.11.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0) (13.4.1)
+WARNING: typer 0.12.0 does not provide the extra 'all'
+Requirement already satisfied: h11>=0.8 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from uvicorn>=0.14.0->gradio>=4.13.0->deepseek-vl==1.0.0) (0.14.0)
+INFO: pip is looking at multiple versions of fastapi to determine which version is compatible with other requirements. This could take a while.
+Collecting fastapi (from gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/c0/c1/2dc286475c8e2e455e431a1cf1cf29662c9f9290434161088ba039d77481/fastapi-0.110.1-py3-none-any.whl (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.9/91.9 kB ? eta 0:00:00
+Collecting starlette<0.38.0,>=0.37.2 (from fastapi->gradio>=4.13.0->deepseek-vl==1.0.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/fd/18/31fa32ed6c68ba66220204ef0be798c349d0a20c1901f9d4a794e08c76d8/starlette-0.37.2-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 kB 3.9 MB/s eta 0:00:00
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.38.2->deepseek-vl==1.0.0) (3.1.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers>=4.38.2->deepseek-vl==1.0.0) (1.26.15)
+Requirement already satisfied: mpmath>=0.19 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from sympy->torch>=2.0.1->deepseek-vl==1.0.0) (1.3.0)
+Requirement already satisfied: attrs>=17.4.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jsonschema>=3.0->altair<6.0,>=4.2.0->gradio>=4.13.0->deepseek-vl==1.0.0) (22.2.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from jsonschema>=3.0->altair<6.0,>=4.2.0->gradio>=4.13.0->deepseek-vl==1.0.0) (0.19.3)
+Requirement already satisfied: markdown-it-py<3.0.0,>=2.2.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from rich>=10.11.0->typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0) (2.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from rich>=10.11.0->typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0) (2.15.1)
+Requirement already satisfied: mdurl~=0.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from markdown-it-py<3.0.0,>=2.2.0->rich>=10.11.0->typer-slim[standard]==0.12.0->typer<1.0,>=0.9->typer[all]<1.0,>=0.9; sys_platform != "emscripten"->gradio>=4.13.0->deepseek-vl==1.0.0) (0.1.2)
+Building wheels for collected packages: deepseek-vl
+  Building wheel for deepseek-vl (pyproject.toml) ... done
+  Created wheel for deepseek-vl: filename=deepseek_vl-1.0.0-py3-none-any.whl size=42977 sha256=86ba2cb415c06aaad4cb3f6cf2df492a4e4d3614932f4ae4c0abdc62a3f7832a
+  Stored in directory: C:\Users\AI-Space002\AppData\Local\Temp\pip-ephem-wheel-cache-pt_x24m7\wheels\1f\a7\b9\86e7b4e5b68e457e0247463a3a3500e9b11348ba684a00cb05
+Successfully built deepseek-vl
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: tomlkit, shellingham, ruff, python-multipart, pydantic-core, importlib-resources, annotated-types, typer-slim, starlette, pydantic, gradio-client, fastapi, typer-cli, typer, gradio, deepseek-vl
+  Attempting uninstall: python-multipart
+    Found existing installation: python-multipart 0.0.6
+    Uninstalling python-multipart-0.0.6:
+      Successfully uninstalled python-multipart-0.0.6
+  Attempting uninstall: starlette
+    Found existing installation: starlette 0.26.1
+    Uninstalling starlette-0.26.1:
+      Successfully uninstalled starlette-0.26.1
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 1.10.7
+    Uninstalling pydantic-1.10.7:
+      Successfully uninstalled pydantic-1.10.7
+  WARNING: Failed to remove contents in a temporary directory 'C:\Work\SD-ComfyUI\python_embeded\Lib\site-packages\~ydantic'.
+  You can safely remove it manually.
+  Attempting uninstall: gradio-client
+    Found existing installation: gradio_client 0.2.4
+    Uninstalling gradio_client-0.2.4:
+      Successfully uninstalled gradio_client-0.2.4
+  Attempting uninstall: fastapi
+    Found existing installation: fastapi 0.94.0
+    Uninstalling fastapi-0.94.0:
+      Successfully uninstalled fastapi-0.94.0
+  WARNING: The script typer.exe is installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: gradio
+    Found existing installation: gradio 3.32.0
+    Uninstalling gradio-3.32.0:
+      Successfully uninstalled gradio-3.32.0
+  WARNING: The scripts gradio.exe and upload_theme.exe are installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed annotated-types-0.6.0 deepseek-vl-1.0.0 fastapi-0.110.1 gradio-4.24.0 gradio-client-0.14.0 importlib-resources-6.4.0 pydantic-2.6.4 pydantic-core-2.16.3 python-multipart-0.0.9 ruff-0.3.5 shellingham-1.5.4 starlette-0.37.2 tomlkit-0.12.0 typer-0.12.0 typer-cli-0.12.0 typer-slim-0.12.0
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+transformers的当前版本4.27.4低于要求的4.37.1，将尝试安装。
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting transformers==4.37.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/ad/67/b4d6a51dcaf988cb45b31e26c6e33fb169fe34ba5fb168b086309bd7c028/transformers-4.37.1-py3-none-any.whl (8.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.4/8.4 MB 31.5 MB/s eta 0:00:00
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (3.10.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.19.3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (0.20.3)
+Requirement already satisfied: numpy>=1.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (23.0)
+Requirement already satisfied: pyyaml>=5.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (6.0)
+Requirement already satisfied: regex!=2019.12.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (2022.10.31)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (2.28.2)
+Requirement already satisfied: tokenizers<0.19,>=0.14 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (0.15.2)
+Requirement already satisfied: safetensors>=0.3.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (0.4.2)
+Requirement already satisfied: tqdm>=4.27 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.37.1) (4.65.0)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub<1.0,>=0.19.3->transformers==4.37.1) (2023.10.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub<1.0,>=0.19.3->transformers==4.37.1) (4.10.0)
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.27->transformers==4.37.1) (0.4.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.37.1) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.37.1) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.37.1) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.37.1) (2022.12.7)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: transformers
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.39.2
+    Uninstalling transformers-4.39.2:
+      Successfully uninstalled transformers-4.39.2
+  WARNING: The script transformers-cli.exe is installed in 'C:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+auto-gptq 0.7.1 requires accelerate>=0.26.0, but you have accelerate 0.25.0 which is incompatible.
+deepseek-vl 1.0.0 requires transformers>=4.38.2, but you have transformers 4.37.1 which is incompatible.
+image-reward 1.4 requires timm==0.6.13, but you have timm 0.9.16 which is incompatible.
+Successfully installed transformers-4.37.1
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: C:\Work\SD-ComfyUI\python_embeded\python.exe -m pip install --upgrade pip
+transformers已安装/更新至版本4.37.1。
+Crypto is already installed.
+C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\Comfyui_image2prompt\js
+C:\Work\SD-ComfyUI\ComfyUI\web\extensions\fofo
+C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\Comfyui_image2prompt\js\fofo_showtext.js C:\Work\SD-ComfyUI\ComfyUI\web\extensions\fofo\fofo_showtext.js
+Efficiency Nodes: Attempting to add Control Net options to the 'HiRes-Fix Script' Node (comfyui_controlnet_aux add-on)...Success!
+Efficiency Nodes: Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...Failed!
+ An Endless Sea of Stars Custom Nodes V0.38b : Loaded
+WAS Node Suite: BlenderNeko's Advanced CLIP Text Encode found, attempting to enable `CLIPTextEncode` support.
+WAS Node Suite: `CLIPTextEncode (BlenderNeko Advanced + NSP)` node enabled under `WAS Suite/Conditioning` menu.
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 212 nodes successfully.
+
+        "Creativity takes courage." - Henri Matisse
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui-tcd-scheduler
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_Strimmlarns_aesthetic_score
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_ADV_CLIP_emb
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfy_clip_blip_node
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-WD14-Tagger
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\stability-ComfyUI-nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_IPAdapter_plus
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_experiments
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_InstantID
+   0.0 seconds (IMPORT FAILED): C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ExLlama
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_VisualStylePrompting
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\Endless-Nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Custom-Scripts
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-PickScore-Nodes
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-layerdiffusion
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui_segment_anything
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\CharacterFaceSwap
+   0.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI_smZNodes
+   0.1 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-SUPIR
+   0.2 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\clipseg.py
+   0.2 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-HPSv2-Nodes
+   0.2 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\efficiency-nodes-comfyui-jags
+   0.4 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-LaMA-Preprocessor
+   0.5 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.6 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   0.9 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Portrait-Maker
+   1.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui
+   3.0 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-ImageReward
+  69.4 seconds: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\Comfyui_image2prompt
+
+Setting output directory to: \\NAS65A682\Web\images\test
+Starting server
+
+To see the GUI go to: http://[2408:8207:60ad:6cb0::6aa]:40002
+FETCH DATA from: C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+//NAS65A682/SD-Share/models/IP-Adapter/embeds
