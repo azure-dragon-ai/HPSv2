@@ -805,3 +805,119 @@ Installing collected packages: transformers
   WARNING: The script transformers-cli.exe is installed in 'c:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed transformers-4.27.4
+
+Error occurred when executing BLIP Analyze Image:
+
+The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
+
+File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 151, in recursive_execute
+output_data, output_ui = get_output_data(obj, input_data_all)
+File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 81, in get_output_data
+return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 74, in map_node_over_list
+results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\WAS_Node_Suite.py", line 11097, in blip_caption_image
+caption = model.generate(tensor, sample=False, num_beams=6, max_length=74, min_length=20)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_module.py", line 162, in generate
+outputs = self.text_decoder.generate(input_ids=input_ids,
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+return func(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\transformers\generation\utils.py", line 1490, in generate
+return self.beam_search(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\transformers\generation\utils.py", line 2749, in beam_search
+outputs = self(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 886, in forward
+outputs = self.bert(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 781, in forward
+encoder_outputs = self.encoder(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 445, in forward
+layer_outputs = layer_module(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 361, in forward
+cross_attention_outputs = self.crossattention(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 277, in forward
+self_outputs = self.self(
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+return self._call_impl(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+return forward_call(*args, **kwargs)
+File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 178, in forward
+attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+
+Traceback (most recent call last):
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "C:\Work\SD-ComfyUI\ComfyUI\execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\WAS_Node_Suite.py", line 11097, in blip_caption_image
+    caption = model.generate(tensor, sample=False, num_beams=6, max_length=74, min_length=20)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_module.py", line 162, in generate
+    outputs = self.text_decoder.generate(input_ids=input_ids,
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\transformers\generation\utils.py", line 1490, in generate
+    return self.beam_search(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\transformers\generation\utils.py", line 2749, in beam_search
+    outputs = self(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 886, in forward
+    outputs = self.bert(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 781, in forward
+    encoder_outputs = self.encoder(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 445, in forward
+    layer_outputs = layer_module(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 361, in forward
+    cross_attention_outputs = self.crossattention(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 277, in forward
+    self_outputs = self.self(
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\python_embeded\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Work\SD-ComfyUI\ComfyUI\custom_nodes\was-node-suite-comfyui\modules\BLIP\blip_med.py", line 178, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
+
+Prompt executed in 11.72 seconds
+
+The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
