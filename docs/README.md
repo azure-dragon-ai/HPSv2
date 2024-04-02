@@ -61,4 +61,11 @@ python_embeded\python -m pip install webp
 
 C:\Work\SD-ComfyUI\ComfyUI\HPSv2\HPSv2Models\HPS_v2_compressed.pt
 \\NAS65A682\SD-Share\models\Score\HPSv2Models\HPS_v2_compressed.pt
+
+transformers                 4.37.2
+pip uninstall transformers
+pip install transformers==4.25.1
+python_embeded\python -m pip install transformers==4.25.1
+
+tokenizers                   0.15.1
 ```
