@@ -68,4 +68,6 @@ pip install transformers==4.25.1
 python_embeded\python -m pip install transformers==4.25.1
 
 tokenizers                   0.15.1
+
+python_embeded\python -m pip install transformers==4.27.4
 ```

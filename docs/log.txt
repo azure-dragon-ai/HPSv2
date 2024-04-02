@@ -774,3 +774,34 @@ ERROR: pip's dependency resolver does not currently take into account all the pa
 clip-interrogator 0.6.0 requires transformers>=4.27.1, but you have transformers 4.25.1 which is incompatible.
 image-reward 1.4 requires transformers>=4.27.4, but you have transformers 4.25.1 which is incompatible.
 Successfully installed tokenizers-0.13.3 transformers-4.25.1
+
+python_embeded\python -m pip install transformers==4.27.4
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Collecting transformers==4.27.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/87/f0/2a152ed10ab8601431e87a606d397f7473c5fa4f8162f4ec5bda6ddb2df4/transformers-4.27.4-py3-none-any.whl (6.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 1.1 MB/s eta 0:00:00
+Requirement already satisfied: filelock in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (3.10.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (0.20.3)
+Requirement already satisfied: numpy>=1.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (1.23.5)
+Requirement already satisfied: packaging>=20.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (23.0)
+Requirement already satisfied: pyyaml>=5.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (6.0)
+Requirement already satisfied: regex!=2019.12.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (2022.10.31)
+Requirement already satisfied: requests in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (2.28.2)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (0.13.3)
+Requirement already satisfied: tqdm>=4.27 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from transformers==4.27.4) (4.65.0)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub<1.0,>=0.11.0->transformers==4.27.4) (2023.10.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from huggingface-hub<1.0,>=0.11.0->transformers==4.27.4) (4.5.0)
+Requirement already satisfied: colorama in c:\work\sd-comfyui\python_embeded\lib\site-packages (from tqdm>=4.27->transformers==4.27.4) (0.4.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.27.4) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.27.4) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.27.4) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\work\sd-comfyui\python_embeded\lib\site-packages (from requests->transformers==4.27.4) (2022.12.7)
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: transformers
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.25.1
+    Uninstalling transformers-4.25.1:
+      Successfully uninstalled transformers-4.25.1
+  WARNING: The script transformers-cli.exe is installed in 'c:\Work\SD-ComfyUI\python_embeded\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed transformers-4.27.4
