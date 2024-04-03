@@ -19,6 +19,7 @@ virtualenv clip
 # virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 clip
 # virtualenv --system-site-packages clip
 source clip/bin/activate
+clip\Scripts\activate
 deactivate
 
 mkdir ~/.pip
@@ -69,5 +70,6 @@ python_embeded\python -m pip install transformers==4.25.1
 
 tokenizers                   0.15.1
 
+python_embeded\python -m pip list
 python_embeded\python -m pip install transformers==4.27.4
 ```
