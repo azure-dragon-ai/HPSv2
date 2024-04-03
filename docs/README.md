@@ -73,3 +73,18 @@ tokenizers                   0.15.1
 python_embeded\python -m pip list
 python_embeded\python -m pip install transformers==4.27.4
 ```
+
+```shell
+pip install onnx2torch
+
+https://huggingface.co/internlm/internlm-xcomposer2-vl-7b
+
+https://huggingface.co/internlm/internlm-xcomposer2-vl-7b/tree/main
+https://huggingface.co/internlm/internlm-xcomposer2-vl-7b/resolve/main/pytorch_model-00001-of-00002.bin
+https://huggingface.co/internlm/internlm-xcomposer2-vl-7b/resolve/main/pytorch_model-00002-of-00002.bin
+wget "https://hf-mirror.com/internlm/internlm-xcomposer2-vl-7b/resolve/main/pytorch_model-00001-of-00002.bin"
+wget "https://hf-mirror.com/internlm/internlm-xcomposer2-vl-7b/resolve/main/pytorch_model-00002-of-00002.bin"
+
+wget https://testing.wepromo.cn/pytorch_model-00001-of-00002.bin
+wget https://testing.wepromo.cn/pytorch_model-00002-of-00002.bin
+```
