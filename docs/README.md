@@ -95,3 +95,29 @@ pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
 virtualenv hjh
 source hjh/bin/activate
 ```
+
+```shell
+sudo cp -r ComfyUI/models /data/
+sudo chmod -R 777 /data/models/
+
+ls -al /data/models/
+total 72
+drwxrwxrwx 18 root root 4096 Apr 18 18:36 .
+drwxr-xr-x  5 root root 4096 Apr 18 18:36 ..
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 checkpoints
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 clip
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 clip_vision
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 configs
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 controlnet
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 diffusers
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 embeddings
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 gligen
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 hypernetworks
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 loras
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 photomaker
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 style_models
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 unet
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 upscale_models
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 vae
+drwxrwxrwx  2 root root 4096 Apr 18 18:36 vae_approx
+```
