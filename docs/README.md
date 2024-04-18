@@ -87,4 +87,11 @@ wget "https://hf-mirror.com/internlm/internlm-xcomposer2-vl-7b/resolve/main/pyto
 
 wget https://testing.wepromo.cn/pytorch_model-00001-of-00002.bin
 wget https://testing.wepromo.cn/pytorch_model-00002-of-00002.bin
+
+GIT_LFS_SKIP_SMUDGE=1 git clone git@hf.co:internlm/internlm-xcomposer2-vl-7b
+
+ComfyUI
+pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
+virtualenv hjh
+source hjh/bin/activate
 ```
