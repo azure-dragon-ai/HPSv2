@@ -4,7 +4,7 @@
 #config for a1111 ui
 #all you have to do is change the base_path to where yours is installed
 a111:
-    base_path: path/to/stable-diffusion-webui/
+    base_path: /data/stable-diffusion-webui/
 
     checkpoints: models/Stable-diffusion
     configs: models/Stable-diffusion
@@ -24,16 +24,36 @@ a111:
 #your base path should be either an existing comfy install or a central folder where you store all of your models, loras, etc.
 
 comfyui:
-    base_path: path/to/comfyui/
-    checkpoints: models/checkpoints/
-    clip: models/clip/
-    clip_vision: models/clip_vision/
-    configs: models/configs/
-    controlnet: models/controlnet/
-    embeddings: models/embeddings/
-    loras: models/loras/
-    upscale_models: models/upscale_models/
-    vae: models/vae/
+    base_path: /data
+    checkpoints: models/Stable-diffusion
+    configs: models/Stable-diffusion
+    blip: models/Blip
+    clip: models/Clip_vision
+    clip_vision: models/Clip_vision
+    clipseg: models/Clip_seg
+    controlnet: models/ControlNet
+    embeddings: models/embeddings
+    facexlib: models/facexlib
+    hypernetworks: models/hypernetworks
+    inpaint: models/inpaint
+    insightface: models/insightface
+    instantid: models/IP-Adapter/InstantID
+    ipadapter: models/IP-Adapter
+    loras: |
+         models/Lora
+         models/LyCORIS
+    rembg: models/rembg
+    sams: models/SAM
+    style_models: |
+                  models/Sdxl_styles
+                  models/ControlNet
+    unet: models/UNET
+    upscale_models: |
+                  models/ESRGAN
+                  models/RealESRGAN
+                  models/SwinIR
+    vae: models/VAE
+    vae_approx: models/VAE_approx
 
 #other_ui:
 #    base_path: path/to/ui

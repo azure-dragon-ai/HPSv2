@@ -97,6 +97,9 @@ source hjh/bin/activate
 ```
 
 ```shell
+python ./main.py --listen 0.0.0.0
+http://localhost:8188
+
 sudo cp -r ComfyUI/models /data/
 sudo chmod -R 777 /data/models/
 
