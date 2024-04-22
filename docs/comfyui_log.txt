@@ -1,0 +1,28 @@
+When loading the graph, the following node types were not found:
+InsightFaceLoader (In group node 'workflow/IPAdapter_Loader')
+workflow/IPAdapter_LoaderRemove from workflow
+GetImageSize (In group node 'workflow/Image_Pre')
+workflow/Image_PreRemove from workflow
+IPAdapterApplyEncoded (In group node 'workflow/IPAdapter_Embeds')
+workflow/IPAdapter_EmbedsRemove from workflow
+IPAdapterApply (In group node 'workflow/IPAdapter_1Img')
+workflow/IPAdapter_1ImgRemove from workflow
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+IPAdapterApplyFaceID
+Nodes that have failed to load will show as red on the graph.
+
+InsightFaceLoader
+IPAdapterInsightFaceLoader
+
+When loading the graph, the following node types were not found:
+GetImageSize (In group node 'workflow/Image_Pre')
+workflow/Image_PreRemove from workflow
+IPAdapterApplyEncoded (In group node 'workflow/IPAdapter_Embeds')
+workflow/IPAdapter_EmbedsRemove from workflow
+IPAdapterApply (In group node 'workflow/IPAdapter_1Img')
+workflow/IPAdapter_1ImgRemove from workflow
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+IPAdapterApplyFaceID
+Nodes that have failed to load will show as red on the graph.
