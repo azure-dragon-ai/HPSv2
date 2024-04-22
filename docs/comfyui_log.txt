@@ -134,3 +134,35 @@ ComfyUI-Portrait-Maker : tensorflow
 ComfyUI-Portrait-Maker : install tensorflow
 
 ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+
+Import times for custom nodes:
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/websocket_image_save.py
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-PickScore-Nodes
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_VisualStylePrompting
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_experiments
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui_controlnet_aux
+   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Strimmlarns-Aesthetic-Score
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-ImageReward
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui-tcd-scheduler
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui-inpaint-nodes
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfy_clip_blip_node
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-BrushNet
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_ADV_CLIP_emb
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-layerdiffuse
+   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/CharacterFaceSwap
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/clipseg.py
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/stability-ComfyUI-nodes
+   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-LaMA-Preprocessor
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_smZNodes
+   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui_segment_anything
+   0.1 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/Endless-Nodes
+   0.2 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-ExLlama-Nodes
+   0.3 seconds: /home/chenhe/data/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.4 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_InstantID
+   0.5 seconds: /home/chenhe/data/ComfyUI/custom_nodes/was-node-suite-comfyui
+1151.3 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker
