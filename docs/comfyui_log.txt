@@ -114,3 +114,23 @@ pip install -r comfy_clip_blip_node/requirements.txt
 git clone git@github.com:ArtBot2023/CharacterFaceSwap.git
 cd CharacterFaceSwap
 python install.py
+
+ComfyUI-Portrait-Maker : ### : Check dependencies
+ComfyUI-Portrait-Maker : /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/requirements.txt
+ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
+
+ComfyUI-Portrait-Maker : install aliyun-python-sdk-core-v3==2.13.10
+
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'aliyun-python-sdk-core-v3==2.13.10\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+ComfyUI-Portrait-Maker : opencv-python
+
+ComfyUI-Portrait-Maker : tensorflow-cpu
+
+ComfyUI-Portrait-Maker : install tensorflow-cpu
+
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow-cpu\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+ComfyUI-Portrait-Maker : tensorflow
+
+ComfyUI-Portrait-Maker : install tensorflow
+
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
