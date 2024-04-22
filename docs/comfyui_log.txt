@@ -26,3 +26,72 @@ PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
 workflow/Scale_EnTRemove from workflow
 IPAdapterApplyFaceID
 Nodes that have failed to load will show as red on the graph.
+
+stability-ComfyUI-nodes
+
+ls -al /data/disk1/SD-ComfyUI/ComfyUI/custom_nodes/
+总计 144
+drwxrwxrwx 1 test test  4096  3月 31 14:02 .
+drwxrwxrwx 1 test test  8192  4月  1 10:26 ..
+drwxrwxrwx 1 test test  4096 10月 28 17:26 CharacterFaceSwap
+-rw-rw-rw- 1 test test 10143  1月  9 20:19 clipseg.py
+drwxrwxrwx 1 test test  4096  2月 26 23:08 comfy_clip_blip_node
+drwxrwxrwx 1 test test  4096  2月 19 20:33 ComfyUI_ADV_CLIP_emb
+drwxrwxrwx 1 test test  4096  3月 31 14:04 ComfyUI-AnimateDiff-Evolved
+drwxrwxrwx 1 test test  4096  2月 19 19:08 comfyui_controlnet_aux
+drwxrwxrwx 1 test test  4096  1月 28 19:38 ComfyUI-Custom-Scripts
+drwxrwxrwx 1 test test  4096  3月 21 11:51 ComfyUI-ExLlama
+drwxrwxrwx 1 test test  4096 11月  2 11:48 ComfyUI_experiments
+drwxrwxrwx 1 test test  4096  3月 29 15:52 ComfyUI-HPSv2-Nodes
+drwxrwxrwx 1 test test  4096  3月 20 09:57 ComfyUI-ImageReward
+drwxrwxrwx 1 test test  4096  3月 30 10:58 ComfyUI_InstantID
+drwxrwxrwx 1 test test  4096  3月  6 15:35 ComfyUI_IPAdapter_plus
+drwxrwxrwx 1 test test  4096 12月 23 11:22 ComfyUI-LaMA-Preprocessor
+drwxrwxrwx 1 test test  4096  3月 21 11:10 ComfyUI-layerdiffusion
+drwxrwxrwx 1 test test  4096  3月 30 10:58 ComfyUI-Manager
+drwxrwxrwx 1 test test  4096  1月 23 19:20 ComfyUI-PickScore-Nodes
+drwxrwxrwx 1 test test  4096 12月 23 11:21 ComfyUI-Portrait-Maker
+drwxrwxrwx 1 test test  4096  3月 24 09:58 comfyui_segment_anything
+drwxrwxrwx 1 test test  4096  3月 14 17:05 ComfyUI_smZNodes
+drwxrwxrwx 1 test test  4096  3月  8 08:27 ComfyUI_Strimmlarns_aesthetic_score
+drwxrwxrwx 1 test test  4096  3月 25 16:22 comfyui-tcd-scheduler
+drwxrwxrwx 1 test test  4096  3月 23 12:03 ComfyUI_VisualStylePrompting
+drwxrwxrwx 1 test test  4096  2月 26 20:44 ComfyUI-WD14-Tagger
+drwxrwxrwx 1 test test  4096  2月 19 19:07 efficiency-nodes-comfyui-jags
+drwxrwxrwx 1 test test  4096  3月 13 15:11 Endless-Nodes
+-rw-rw-rw- 1 test test  5305  2月 28 02:22 example_node.py.example
+drwxrwxrwx 1 test test     0  3月 23 12:05 __pycache__
+drwxrwxrwx 1 test test  4096  2月 19 18:18 stability-ComfyUI-nodes
+drwxrwxrwx 1 test test  4096  2月 19 19:08 was-node-suite-comfyui
+-rw-rw-rw- 1 test test  1295  3月 23 12:02 websocket_image_save.py
+
+
+git clone git@github.com:ltdrdata/ComfyUI-Manager.git
+git clone git@github.com:comfyanonymous/ComfyUI_experiments.git
+git clone git@github.com:pythongosssss/ComfyUI-WD14-Tagger.git
+python_embeded/python.exe -s -m pip install -r requirements.txt
+pip install -r requirements.txt
+git clone git@github.com:Zuellni/ComfyUI-PickScore-Nodes.git
+git clone git@github.com:ExponentialML/ComfyUI_VisualStylePrompting.git
+git clone git@github.com:cubiq/ComfyUI_IPAdapter_plus.git
+git clone git@github.com:Kosinkadink/ComfyUI-AnimateDiff-Evolved.git
+git clone git@github.com:nullquant/ComfyUI-BrushNet.git
+pip install -r requirements.txt
+git clone git@github.com:storyicon/comfyui_segment_anything.git
+pip install -r requirements.txt
+git clone git@github.com:huchenlei/ComfyUI-layerdiffuse.git
+pip install -r requirements.txt
+git clone git@github.com:shiimizu/ComfyUI_smZNodes.git
+git clone git@github.com:strimmlarn/ComfyUI-Strimmlarns-Aesthetic-Score.git
+pip install -r requirement.txt
+git clone git@github.com:Zuellni/ComfyUI-ExLlama-Nodes.git
+pip install -r ComfyUI-ExLlama-Nodes/requirements.txt
+git clone git@github.com:Fannovel16/comfyui_controlnet_aux.git
+pip install -r comfyui_controlnet_aux/requirements.txt
+git clone git@github.com:mlinmg/ComfyUI-LaMA-Preprocessor.git
+archived
+git clone git@github.com:azure-dragon-ai/comfyui-inpaint-nodes.git
+pip install opencv-python
+git clone git@github.com:WASasquatch/was-node-suite-comfyui.git
+pip install -r was-node-suite-comfyui/requirements.txt
+git clone git@github.com:azure-dragon-ai/was-node-suite-comfyui.git

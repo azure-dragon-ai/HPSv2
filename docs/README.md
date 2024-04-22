@@ -109,6 +109,9 @@ python main.py --cuda-device=0 --highvram --force-fp16 --listen=0.0.0.0 --port=8
 
 websocket_image_save.py
 
+InsightFaceLoader
+IPAdapterInsightFaceLoader
+
 ls -al /data/models/
 total 72
 drwxrwxrwx 18 root root 4096 Apr 18 18:36 .
