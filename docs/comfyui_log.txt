@@ -95,3 +95,22 @@ pip install opencv-python
 git clone git@github.com:WASasquatch/was-node-suite-comfyui.git
 pip install -r was-node-suite-comfyui/requirements.txt
 git clone git@github.com:azure-dragon-ai/was-node-suite-comfyui.git
+git clone git@github.com:Stability-AI/stability-ComfyUI-nodes.git
+pip install -r stability-ComfyUI-nodes/requirements.txt
+git clone git@github.com:tusharbhutt/Endless-Nodes.git
+pip install -r Endless-Nodes/requirements.txt
+git clone git@github.com:jags111/efficiency-nodes-comfyui.git
+pip install simpleeval
+pip install -r efficiency-nodes-comfyui/requirements.txt
+git clone git@github.com:dfl/comfyui-tcd-scheduler.git
+git clone git@github.com:THtianhao/ComfyUI-Portrait-Maker.git
+git clone git@github.com:cubiq/ComfyUI_InstantID.git
+git clone git@github.com:ZaneA/ComfyUI-ImageReward.git
+pip install -r ComfyUI-ImageReward/requirements.txt
+git clone git@github.com:pythongosssss/ComfyUI-Custom-Scripts.git
+git clone git@github.com:BlenderNeko/ComfyUI_ADV_CLIP_emb.git
+git clone git@github.com:paulo-coronado/comfy_clip_blip_node.git
+pip install -r comfy_clip_blip_node/requirements.txt
+git clone git@github.com:ArtBot2023/CharacterFaceSwap.git
+cd CharacterFaceSwap
+python install.py
