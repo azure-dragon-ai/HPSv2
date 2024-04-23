@@ -1747,3 +1747,15 @@ WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\Work\SD-ComfyUI\Comf
 WAS Node Suite: Finished. Loaded 212 nodes successfully.
 
         "Creativity takes courage." - Henri Matisse
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[ERROR] An error occurred while retrieving information for the 'IPAdapterLoadEmbeds' node.
+Traceback (most recent call last):
+  File "/home/chenhe/data/ComfyUI/server.py", line 414, in get_object_info
+    out[x] = node_info(x)
+  File "/home/chenhe/data/ComfyUI/server.py", line 392, in node_info
+    info['input'] = obj_class.INPUT_TYPES()
+  File "/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus/IPAdapterPlus.py", line 1317, in INPUT_TYPES
+    files = [os.path.relpath(os.path.join(root, file), embeds_dir) for root, dirs, files in os.walk(input_dir) for file in files if file.endswith('.ipadpt')]
+NameError: name 'input_dir' is not defined

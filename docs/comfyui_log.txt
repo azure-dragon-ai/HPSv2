@@ -915,7 +915,57 @@ Nodes that have failed to load will show as red on the graph.
 
 ModuleNotFoundError: No module named 'tkinter'
 
-Cannot import /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-HPSv2-Nodes module for custom nodes: No module named 'tkinter'
+Cannot import /home/test/data/ComfyUI/custom_nodes/ComfyUI-HPSv2-Nodes module for custom nodes: No module named 'tkinter'
 
 sudo apt install python3-tk
 pip install tk
+
+FETCH DATA from: /home/test/data/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+Failed to validate prompt for output 119:
+* LoraLoader 7:
+  - Value not in list: lora_name: 'ControlLoRA\control_lora_rank128_v11p_sd15_openpose_fp16.safetensors' not in (list of length 479)
+* LoraLoader 8:
+  - Value not in list: lora_name: 'IP-Adapter\ip-adapter-faceid_sd15_lora.safetensors' not in (list of length 479)
+* LoraLoader 9:
+  - Value not in list: lora_name: 'IP-Adapter\ip-adapter-faceid-plusv2_sd15_lora.safetensors' not in (list of length 479)
+* IPAdapterLoadEmbeds 79:0:
+  - Value not in list: embeds: 'embeds\TangsancaiPlus40_v240419.ipadpt' not in (list of length 57)
+* LoadImage 75:0:
+  - Custom validation failed for node: image - Invalid image file: SampleSv00004.png
+* LoraLoader 65:1:
+  - Value not in list: lora_name: 'lcm\lcm_lora_sd15.safetensors' not in (list of length 479)
+* ControlNetLoader 24:1:
+  - Value not in list: control_net_name: 'fp16\control_v11p_sd15_openpose_fp16.safetensors' not in (list of length 181)
+* ControlNetLoader 41:1:
+  - Value not in list: control_net_name: 'fp16\control_v11f1p_sd15_depth_fp16.safetensors' not in (list of length 181)
+Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+FETCH DATA from: /home/test/data/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+Failed to validate prompt for output 119:
+* LoraLoader 7:
+  - Value not in list: lora_name: 'ControlLoRA\control_lora_rank128_v11p_sd15_openpose_fp16.safetensors' not in (list of length 479)
+* LoraLoader 8:
+  - Value not in list: lora_name: 'IP-Adapter\ip-adapter-faceid_sd15_lora.safetensors' not in (list of length 479)
+* LoraLoader 9:
+  - Value not in list: lora_name: 'IP-Adapter\ip-adapter-faceid-plusv2_sd15_lora.safetensors' not in (list of length 479)
+* IPAdapterLoadEmbeds 79:0:
+  - Value not in list: embeds: 'embeds\TangsancaiPlus40_v240419.ipadpt' not in (list of length 57)
+* LoadImage 75:0:
+  - Custom validation failed for node: image - Invalid image file: SampleSv00004.png
+* LoraLoader 65:1:
+  - Value not in list: lora_name: 'lcm\lcm_lora_sd15.safetensors' not in (list of length 479)
+* ControlNetLoader 24:1:
+  - Value not in list: control_net_name: 'fp16\control_v11p_sd15_openpose_fp16.safetensors' not in (list of length 181)
+* ControlNetLoader 41:1:
+  - Value not in list: control_net_name: 'fp16\control_v11f1p_sd15_depth_fp16.safetensors' not in (list of length 181)
+Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+
+embeds                                   ip-adapter-full-face_sd15.safetensors        ip-adapter-plus_sdxl_vit-h.safetensors  ip-adapter_sdxl.bin
+InstantID                                ip-adapter-plus-face_sd15.bin                ip-adapter_sd15.bin                     ip-adapter_sdxl.safetensors
+ip-adapter-faceid-plusv2_sd15.bin        ip-adapter-plus-face_sd15.safetensors        ip-adapter_sd15_light.safetensors       ip-adapter_sdxl_vit-h.safetensors
+ip-adapter-faceid-portrait_sd15.bin      ip-adapter-plus-face_sdxl_vit-h.safetensors  ip-adapter_sd15_light_v11.bin
+ip-adapter-faceid-portrait-v11_sd15.bin  ip-adapter-plus_sd15.bin                     ip-adapter_sd15.safetensors
+ip-adapter-faceid_sd15.bin               ip-adapter-plus_sd15.safetensors             ip-adapter_sd15_vit-G.safetensors
