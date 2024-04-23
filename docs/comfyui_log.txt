@@ -766,53 +766,156 @@ cd CharacterFaceSwap
 python install.py
 
 ComfyUI-Portrait-Maker : ### : Check dependencies
-ComfyUI-Portrait-Maker : /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/requirements.txt
+ComfyUI-Portrait-Maker : /home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/requirements.txt
 ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
 
 ComfyUI-Portrait-Maker : install aliyun-python-sdk-core-v3==2.13.10
 
-ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'aliyun-python-sdk-core-v3==2.13.10\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/test/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'aliyun-python-sdk-core-v3==2.13.10\n'] in '/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
 ComfyUI-Portrait-Maker : opencv-python
 
 ComfyUI-Portrait-Maker : tensorflow-cpu
 
 ComfyUI-Portrait-Maker : install tensorflow-cpu
 
-ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow-cpu\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/test/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow-cpu\n'] in '/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
 ComfyUI-Portrait-Maker : tensorflow
 
 ComfyUI-Portrait-Maker : install tensorflow
 
-ComfyUI-Portrait-Maker : EXECUTE: ['/home/chenhe/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow\n'] in '/home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
+ComfyUI-Portrait-Maker : EXECUTE: ['/home/test/Downloads/hjh/bin/python', '-m', 'pip', 'install', '-q', 'tensorflow\n'] in '/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker'
 
 Import times for custom nodes:
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/websocket_image_save.py
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-PickScore-Nodes
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_VisualStylePrompting
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_experiments
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui_controlnet_aux
-   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Strimmlarns-Aesthetic-Score
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-ImageReward
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui-tcd-scheduler
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui-inpaint-nodes
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfy_clip_blip_node
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-BrushNet
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_ADV_CLIP_emb
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-layerdiffuse
-   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/CharacterFaceSwap
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/clipseg.py
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/stability-ComfyUI-nodes
-   0.0 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-LaMA-Preprocessor
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Manager
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_smZNodes
-   0.0 seconds: /home/chenhe/data/ComfyUI/custom_nodes/comfyui_segment_anything
-   0.1 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/Endless-Nodes
-   0.2 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-ExLlama-Nodes
-   0.3 seconds: /home/chenhe/data/ComfyUI/custom_nodes/efficiency-nodes-comfyui
-   0.4 seconds: /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI_InstantID
-   0.5 seconds: /home/chenhe/data/ComfyUI/custom_nodes/was-node-suite-comfyui
-1151.3 seconds (IMPORT FAILED): /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/websocket_image_save.py
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-PickScore-Nodes
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_VisualStylePrompting
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_experiments
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/comfyui_controlnet_aux
+   0.0 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/ComfyUI-Strimmlarns-Aesthetic-Score
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-ImageReward
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/comfyui-tcd-scheduler
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/comfyui-inpaint-nodes
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/comfy_clip_blip_node
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-BrushNet
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_ADV_CLIP_emb
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-layerdiffuse
+   0.0 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/CharacterFaceSwap
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/clipseg.py
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/stability-ComfyUI-nodes
+   0.0 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/ComfyUI-LaMA-Preprocessor
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_smZNodes
+   0.0 seconds: /home/test/data/ComfyUI/custom_nodes/comfyui_segment_anything
+   0.1 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/Endless-Nodes
+   0.2 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/ComfyUI-ExLlama-Nodes
+   0.3 seconds: /home/test/data/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+   0.4 seconds: /home/test/data/ComfyUI/custom_nodes/ComfyUI_InstantID
+   0.5 seconds: /home/test/data/ComfyUI/custom_nodes/was-node-suite-comfyui
+1151.3 seconds (IMPORT FAILED): /home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker
+
+When loading the graph, the following node types were not found:
+IPAdapterApplyEncoded (In group node 'workflow/IPAdapter_Embeds')
+workflow/IPAdapter_EmbedsRemove from workflow
+IPAdapterApply (In group node 'workflow/IPAdapter_1Img')
+workflow/IPAdapter_1ImgRemove from workflow
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+IPAdapterApplyFaceID
+Nodes that have failed to load will show as red on the graph.
+
+46241f3ba5401f076f8d90c2aa85f2194910e1a9
+0d0a7b3693baf8903fe2028ff218b557d619a93d
+
+When loading the graph, the following node types were not found:
+IPAdapterInsightFaceLoader (In group node 'workflow/IPAdapter_Loader')
+workflow/IPAdapter_LoaderRemove from workflow
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+Nodes that have failed to load will show as red on the graph.
+
+When loading the graph, the following node types were not found:
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+Nodes that have failed to load will show as red on the graph.
+
+ComfyUI-Portrait-Maker : ### : Check dependencies
+ComfyUI-Portrait-Maker : /home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/requirements.txt
+ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
+
+ComfyUI-Portrait-Maker : opencv-python
+
+ComfyUI-Portrait-Maker : tensorflow-cpu
+
+ComfyUI-Portrait-Maker : tensorflow
+
+ComfyUI-Portrait-Maker : onnx
+
+ComfyUI-Portrait-Maker : onnxruntime
+
+ComfyUI-Portrait-Maker : modelscope
+
+ComfyUI-Portrait-Maker : scikit-image
+
+ComfyUI-Portrait-Maker : matplotlib
+
+ComfyUI-Portrait-Maker : insightface
+
+ComfyUI-Portrait-Maker : diffusers==0.18.2
+
+ComfyUI-Portrait-Maker : sentencepiece
+2024-04-22 19:45:37,217 - modelscope - INFO - PyTorch version 2.2.2+cu121 Found.
+2024-04-22 19:45:37,218 - modelscope - INFO - TensorFlow version 2.16.1 Found.
+2024-04-22 19:45:37,218 - modelscope - INFO - Loading ast index from /home/test/.cache/modelscope/ast_indexer
+2024-04-22 19:45:37,235 - modelscope - INFO - Loading done! Current index file version is 1.13.3, with md5 a6cce0d13383d05b9b8da407ea952e4e and a total number of 972 components indexed
+PyTorch version 2.2.2+cu121 available.
+TensorFlow version 2.16.1 available.
+JAX version 0.4.26 available.
+Traceback (most recent call last):
+  File "/home/test/data/ComfyUI/nodes.py", line 1864, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/__init__.py", line 9, in <module>
+    from portrait.nodes import *
+  File "/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/portrait/nodes.py", line 7, in <module>
+    from .model_holder import *
+  File "/home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/portrait/model_holder.py", line 1, in <module>
+    from modelscope.pipelines import pipeline
+  File "/home/test/Downloads/hjh/lib/python3.10/site-packages/modelscope/pipelines/__init__.py", line 4, in <module>
+    from .base import Pipeline
+  File "/home/test/Downloads/hjh/lib/python3.10/site-packages/modelscope/pipelines/base.py", line 16, in <module>
+    from modelscope.msdatasets import MsDataset
+  File "/home/test/Downloads/hjh/lib/python3.10/site-packages/modelscope/msdatasets/__init__.py", line 2, in <module>
+    from .ms_dataset import MsDataset
+  File "/home/test/Downloads/hjh/lib/python3.10/site-packages/modelscope/msdatasets/ms_dataset.py", line 24, in <module>
+    from modelscope.msdatasets.utils.hf_datasets_util import \
+  File "/home/test/Downloads/hjh/lib/python3.10/site-packages/modelscope/msdatasets/utils/hf_datasets_util.py", line 42, in <module>
+    from datasets.utils import _datasets_server, file_utils
+ImportError: cannot import name '_datasets_server' from 'datasets.utils' (/home/test/Downloads/hjh/lib/python3.10/site-packages/datasets/utils/__init__.py)
+
+Cannot import /home/test/data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker module for custom nodes: cannot import name '_datasets_server' from 'datasets.utils' (/home/test/Downloads/hjh/lib/python3.10/site-packages/datasets/utils/__init__.py)
+
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+When loading the graph, the following node types were not found:
+InsightFaceLoader (In group node 'workflow/IPAdapter_Loader')
+workflow/IPAdapter_LoaderRemove from workflow
+IPAdapterApplyEncoded (In group node 'workflow/IPAdapter_Embeds')
+workflow/IPAdapter_EmbedsRemove from workflow
+IPAdapterApply (In group node 'workflow/IPAdapter_1Img')
+workflow/IPAdapter_1ImgRemove from workflow
+PM_ImageScaleShort (In group node 'workflow/Scale_EnT')
+workflow/Scale_EnTRemove from workflow
+IPAdapterApplyFaceID
+Nodes that have failed to load will show as red on the graph.
+
+ModuleNotFoundError: No module named 'tkinter'
+
+Cannot import /home/chenhe/data/ComfyUI/custom_nodes/ComfyUI-HPSv2-Nodes module for custom nodes: No module named 'tkinter'
+
+sudo apt install python3-tk
+pip install tk
