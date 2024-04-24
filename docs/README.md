@@ -94,6 +94,8 @@ ComfyUI
 pip install virtualenv -i https://pypi.tuna.tsinghua.edu.cn/simple/
 virtualenv hjh
 source hjh/bin/activate
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121 -i https://mirrors.aliyun.com/pypi/simple/
+pip install -r requirements.txt
 ```
 
 ```shell

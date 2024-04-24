@@ -969,3 +969,8 @@ ip-adapter-faceid-plusv2_sd15.bin        ip-adapter-plus-face_sd15.safetensors  
 ip-adapter-faceid-portrait_sd15.bin      ip-adapter-plus-face_sdxl_vit-h.safetensors  ip-adapter_sd15_light_v11.bin
 ip-adapter-faceid-portrait-v11_sd15.bin  ip-adapter-plus_sd15.bin                     ip-adapter_sd15.safetensors
 ip-adapter-faceid_sd15.bin               ip-adapter-plus_sd15.safetensors             ip-adapter_sd15_vit-G.safetensors
+
+Loading 1 new model
+Failed to find /home/test/data/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts/yzd-v/DWPose/yolox_l.onnx.
+ Downloading from huggingface.co
+cacher folder is /tmp, you can change it by custom_tmp_path in config.yaml
