@@ -988,3 +988,16 @@ If you did intend to build this package from source, try installing a Rust compi
   ERROR: Failed building wheel for tokenizers
 Failed to build tokenizers
 ERROR: Could not build wheels for tokenizers, which is required to install pyproject.toml-based projects
+
+ComfyUI-Portrait-Maker : sentencepiece
+2024-04-25 18:21:00,746 - modelscope - INFO - PyTorch version 2.3.0+cu121 Found.
+2024-04-25 18:21:00,747 - modelscope - INFO - TensorFlow version 2.16.1 Found.
+2024-04-25 18:21:00,747 - modelscope - INFO - Loading ast index from /home/test/.cache/modelscope/ast_indexer
+2024-04-25 18:21:00,765 - modelscope - INFO - No valid ast index found from /home/test/.cache/modelscope/ast_indexer, generating ast index from prebuilt!
+2024-04-25 18:21:00,789 - modelscope - INFO - Loading done! Current index file version is 1.14.0, with md5 b70f9e31c896d93bd928b29ecfcf7591 and a total number of 976 components indexed
+PyTorch version 2.3.0+cu121 available.
+TensorFlow version 2.16.1 available.
+JAX version 0.4.26 available.
+Start Setting weights
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth Download To /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth 下载到 /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
