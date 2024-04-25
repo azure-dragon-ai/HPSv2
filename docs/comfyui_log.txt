@@ -1001,3 +1001,128 @@ JAX version 0.4.26 available.
 Start Setting weights
 Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth Download To /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
 开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth 下载到 /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
+
+export HF_ENDPOINT=https://hf-mirror.com
+export HPS_ROOT=/data/models/Score/HPSv2Models
+python main.py --cuda-device=0 --highvram --force-fp16 --listen=0.0.0.0 --port=10001
+** ComfyUI startup time: 2024-04-25 18:20:58.772249
+** Platform: Linux
+** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+** Python executable: /data/ComfyUI/hjh/bin/python
+** Log path: /data/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.1 seconds: /data/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Set cuda device to: 0
+Total VRAM 15825 MB, total RAM 63425 MB
+Forcing FP16.
+Set vram state to: HIGH_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4070 Ti SUPER : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+Adding extra search path checkpoints /data/stable-diffusion-webui/models/Stable-diffusion
+Adding extra search path configs /data/stable-diffusion-webui/models/Stable-diffusion
+Adding extra search path vae /data/stable-diffusion-webui/models/VAE
+Adding extra search path loras /data/stable-diffusion-webui/models/Lora
+Adding extra search path loras /data/stable-diffusion-webui/models/LyCORIS
+Adding extra search path upscale_models /data/stable-diffusion-webui/models/ESRGAN
+Adding extra search path upscale_models /data/stable-diffusion-webui/models/RealESRGAN
+Adding extra search path upscale_models /data/stable-diffusion-webui/models/SwinIR
+Adding extra search path embeddings /data/stable-diffusion-webui/embeddings
+Adding extra search path hypernetworks /data/stable-diffusion-webui/models/hypernetworks
+Adding extra search path controlnet /data/stable-diffusion-webui/models/ControlNet
+Adding extra search path checkpoints /data/models/Stable-diffusion
+Adding extra search path configs /data/models/Stable-diffusion
+Adding extra search path blip /data/models/Blip
+Adding extra search path clip /data/models/Clip_vision
+Adding extra search path clip_vision /data/models/Clip_vision
+Adding extra search path clipseg /data/models/Clip_seg
+Adding extra search path controlnet /data/models/ControlNet
+Adding extra search path embeddings /data/models/embeddings
+Adding extra search path facexlib /data/models/facexlib
+Adding extra search path hypernetworks /data/models/hypernetworks
+Adding extra search path inpaint /data/models/inpaint
+Adding extra search path insightface /data/models/insightface
+Adding extra search path instantid /data/models/IP-Adapter/InstantID
+Adding extra search path ipadapter /data/models/IP-Adapter
+Adding extra search path loras /data/models/Lora
+Adding extra search path loras /data/models/LyCORIS
+Adding extra search path rembg /data/models/rembg
+Adding extra search path sams /data/models/SAM
+Adding extra search path style_models /data/models/Sdxl_styles
+Adding extra search path style_models /data/models/ControlNet
+Adding extra search path unet /data/models/UNET
+Adding extra search path upscale_models /data/models/ESRGAN
+Adding extra search path upscale_models /data/models/RealESRGAN
+Adding extra search path upscale_models /data/models/SwinIR
+Adding extra search path vae /data/models/VAE
+Adding extra search path vae_approx /data/models/VAE_approx
+ComfyUI-Portrait-Maker : ### : Check dependencies
+ComfyUI-Portrait-Maker : /data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/requirements.txt
+ComfyUI-Portrait-Maker : aliyun-python-sdk-core-v3==2.13.10
+
+ComfyUI-Portrait-Maker : opencv-python
+
+ComfyUI-Portrait-Maker : tensorflow-cpu
+
+ComfyUI-Portrait-Maker : tensorflow
+
+ComfyUI-Portrait-Maker : onnx
+
+ComfyUI-Portrait-Maker : onnxruntime
+
+ComfyUI-Portrait-Maker : modelscope
+
+ComfyUI-Portrait-Maker : scikit-image
+
+ComfyUI-Portrait-Maker : matplotlib
+
+ComfyUI-Portrait-Maker : insightface
+
+ComfyUI-Portrait-Maker : diffusers==0.18.2
+
+ComfyUI-Portrait-Maker : sentencepiece
+2024-04-25 18:21:00,746 - modelscope - INFO - PyTorch version 2.3.0+cu121 Found.
+2024-04-25 18:21:00,747 - modelscope - INFO - TensorFlow version 2.16.1 Found.
+2024-04-25 18:21:00,747 - modelscope - INFO - Loading ast index from /home/chenhe/.cache/modelscope/ast_indexer
+2024-04-25 18:21:00,765 - modelscope - INFO - No valid ast index found from /home/chenhe/.cache/modelscope/ast_indexer, generating ast index from prebuilt!
+2024-04-25 18:21:00,789 - modelscope - INFO - Loading done! Current index file version is 1.14.0, with md5 b70f9e31c896d93bd928b29ecfcf7591 and a total number of 976 components indexed
+PyTorch version 2.3.0+cu121 available.
+TensorFlow version 2.16.1 available.
+JAX version 0.4.26 available.
+Start Setting weights
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth Download To /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_openpose.pth 下载到 /data/ComfyUI/models/controlnet/control_v11p_sd15_openpose.pth
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.45G/1.45G [00:31<00:00, 46.3MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_canny.pth Download To /data/ComfyUI/models/controlnet/control_v11p_sd15_canny.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11p_sd15_canny.pth 下载到 /data/ComfyUI/models/controlnet/control_v11p_sd15_canny.pth
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.45G/1.45G [00:31<00:00, 45.3MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11f1e_sd15_tile.pth Download To /data/ComfyUI/models/controlnet/control_v11f1e_sd15_tile.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_v11f1e_sd15_tile.pth 下载到 /data/ComfyUI/models/controlnet/control_v11f1e_sd15_tile.pth
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.45G/1.45G [00:32<00:00, 44.9MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_sd15_random_color.pth Download To /data/ComfyUI/models/controlnet/control_sd15_random_color.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/control_sd15_random_color.pth 下载到 /data/ComfyUI/models/controlnet/control_sd15_random_color.pth
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.45G/1.45G [00:31<00:00, 46.3MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/FilmVelvia3.safetensors Download To /data/ComfyUI/models/loras/FilmVelvia3.safetensors
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/FilmVelvia3.safetensors 下载到 /data/ComfyUI/models/loras/FilmVelvia3.safetensors
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 151M/151M [00:03<00:00, 48.1MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/body_pose_model.pth Download To /data/ComfyUI/models/controlnet/body_pose_model.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/body_pose_model.pth 下载到 /data/ComfyUI/models/controlnet/body_pose_model.pth
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209M/209M [00:04<00:00, 47.6MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/facenet.pth Download To /data/ComfyUI/models/controlnet/facenet.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/facenet.pth 下载到 /data/ComfyUI/models/controlnet/facenet.pth
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 154M/154M [00:03<00:00, 48.5MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/hand_pose_model.pth Download To /data/ComfyUI/models/controlnet/hand_pose_model.pth
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/hand_pose_model.pth 下载到 /data/ComfyUI/models/controlnet/hand_pose_model.pth
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 147M/147M [00:03<00:00, 48.6MB/s]
+Start Downloading: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/vae-ft-mse-840000-ema-pruned.ckpt Download To /data/ComfyUI/models/vae/vae-ft-mse-840000-ema-pruned.ckpt
+开始下载: https://pai-aigc-photog.oss-cn-hangzhou.aliyuncs.com/webui/vae-ft-mse-840000-ema-pruned.ckpt 下载到 /data/ComfyUI/models/vae/vae-ft-mse-840000-ema-pruned.ckpt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 335M/335M [00:07<00:00, 47.4MB/s]
+Start Downloading: https://huggingface.co/ezioruan/inswapper_128.onnx/resolve/main/inswapper_128.onnx Download To /data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/models/inswapper_128.onnx
+开始下载: https://huggingface.co/ezioruan/inswapper_128.onnx/resolve/main/inswapper_128.onnx 下载到 /data/ComfyUI/custom_nodes/ComfyUI-Portrait-Maker/models/inswapper_128.onnx
+
+Cannot import /data/ComfyUI/custom_nodes/ComfyUI-layerdiffuse module for custom nodes: diffusers>=0.25.0 requirement not satisfied. Please install correct diffusers version.
+[smZNodes] compel is not installed. Attempting to install...
+[smZNodes] compel Installed!
+[smZNodes] lark is not installed. Attempting to install...
