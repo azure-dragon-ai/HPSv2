@@ -974,3 +974,17 @@ Loading 1 new model
 Failed to find /home/test/data/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts/yzd-v/DWPose/yolox_l.onnx.
  Downloading from huggingface.co
 cacher folder is /tmp, you can change it by custom_tmp_path in config.yaml
+
+pip install -r was-node-suite-comfyui/requirements.txt
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+albumentations 1.4.4 requires opencv-python-headless>=4.9.0, but you have opencv-python-headless 4.7.0.72 which is incompatible.
+albumentations 1.4.4 requires scikit-image>=0.21.0, but you have scikit-image 0.20.0 which is incompatible.
+
+pip install -r comfy_clip_blip_node/requirements.txt
+If you did intend to build this package from source, try installing a Rust compiler from your system package manager and ensure it is on the PATH during installation. Alternatively, rustup (available at https://rustup.rs) is the recommended way to download and update the Rust compiler toolchain.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for tokenizers
+Failed to build tokenizers
+ERROR: Could not build wheels for tokenizers, which is required to install pyproject.toml-based projects
