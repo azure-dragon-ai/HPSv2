@@ -115,6 +115,11 @@ python main.py --cuda-device=0 --highvram --force-fp16 --listen=0.0.0.0 --port=8
 export HF_ENDPOINT=https://hf-mirror.com
 export HPS_ROOT=/data/models/Score/HPSv2Models
 python main.py --cuda-device=0 --highvram --force-fp16 --listen=0.0.0.0 --port=10001
+python main.py --cuda-device=0 --highvram --force-fp16 --listen=0.0.0.0 --port=20003
+python main.py --cuda-device=0 --highvram --force-fp16 --listen=[2408:8207:60ad:6cb0::f4c] --port=20003
+python main.py --cuda-device=0 --highvram --force-fp16 --listen=[2408:8207:60ad:6cb0:99cf:d82e:aa6e:a4ee] --port=20003
+python main.py --cuda-device=0 --highvram --force-fp16 --listen=[::0] --port=20003
+http://[2408:8207:60ad:6cb0::f4c]:20003
 
 websocket_image_save.py
 
